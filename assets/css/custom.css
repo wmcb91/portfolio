@@ -1,0 +1,200 @@
+/*My custom CSS*/
+
+/*sizing my logo*/
+body {
+  /*font-family: 'NTR';*/
+  /*font-family: 'Palanquin';*/
+  font-family: 'Hind Siliguri';
+}
+
+em {
+  margin-right: 2px;
+}
+
+.logo {
+  clear: left;
+  float: left;
+  height: 80px;
+  margin: 1px 15px 0 0;
+  width: 80px;
+}
+
+.brand {
+  float: left;
+  position: relative;
+}
+
+.sub-title {
+  color: #90AD99;
+}
+
+.scroller-spy {
+  font-size: 17px;
+}
+
+.nav-collapse {
+  font-size: 17px;
+}
+
+
+.da-slide .slide-header {
+  background-color: rgba(0, 0, 0, 0.65);
+  /*font-family: 'Palanquin';*/
+  font-family: 'Hind Siliguri';
+}
+
+.da-slide.da-slide-current .slides,
+.da-slide.da-slide-toleft .slides,
+.da-slide.da-slide-toright .slides {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  /*font-family: 'Palanquin';*/
+  font-family: 'Hind Siliguri';
+  font-size: 1.4em;
+  height: auto;
+  padding: 8px 10px 15px;
+}
+
+.my-photo {
+  border-radius: 170px;
+  height: 300px;
+}
+
+.stranger {
+  color: #ab1300;
+}
+
+.stranger:hover {
+  color: #ab1300;
+  opacity: .7;
+  text-decoration: none;
+}
+
+.golfer {
+  color: #547f0b;
+}
+
+.golfer:hover {
+  color: #547f0b;
+  opacity: .7;
+  text-decoration: none;
+}
+
+.flix:hover {
+  text-decoration: none;
+}
+
+
+
+.devicon {
+  display: block;
+  padding: 20px;
+  position: relative;
+  transition: 0.6s;
+}
+
+.devicon:hover {
+  padding: 10px;
+}
+
+.devicon > img {
+  float: left;
+}
+
+/*.devicon > img:hover {
+  opacity: .7;
+}*/
+
+.devicon-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.dev {
+  height: 90%;
+  position: absolute;
+  transition: 0.6s;
+  width: 90%;
+  z-index: -1;
+}
+
+.main-project {
+  display: none;
+}
+
+.project-2 {
+  box-sizing: border-box;
+  border-left: 3px solid #004E64;
+  border-top: 3px solid #004E64;
+  border-right: 3px solid #004E64;
+  height: 310px;
+}
+
+.thumbnail {
+  box-sizing: border-box;
+  padding: 0 0px 15px;
+}
+
+.thumbnail .caption {
+  padding: 7px 9px;
+}
+
+.thumbnail .caption .caption-descr {
+  font-size: 14.5px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.thumbnail .caption .caption-descr #nel {
+  color: #0099ee;
+  float: none;
+}
+
+
+.color-bottom-line {
+  text-align: center;
+}
+
+.contact-icons {
+  margin-top: 35px;
+}
+
+.linked {
+  background-image: url("../../assets/css/genericons-2/source/svg/linkedin-alt.svg");
+  background-size: cover;
+  display: inline-block;
+  margin: 0 6px;
+  width: 48px;
+  height: 48px;
+}
+
+.github {
+  border-radius: 45px;
+  background-image: url("../../assets/css/genericons-2/source/svg/github.svg");
+  background-size: cover;
+  display: inline-block;
+  margin: 0 6px 3px;
+  height: 45px;
+  width: 45px;
+}
+
+.resume {
+  background-image: url("../../assets/css/genericons-2/source/svg/resume-small.png");
+  background-size: cover;
+  display: inline-block;
+  margin: 0 6px 3px;
+  height: 45px;
+  width: 45px;
+}
+
+.footer {
+  font-size: 17px;
+}
+
+#footer-section {
+  padding-bottom: 0;
+}
