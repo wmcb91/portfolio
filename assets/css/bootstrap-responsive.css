@@ -608,9 +608,15 @@
     width: 31.491712707182323%;
     *width: 31.43852121782062%;
   }
-  .row-fluid .span3 {
-    width: 22.92817679558011%;
-    *width: 22.87498530621841%;
+  /*.row-fluid .span3 {
+    width: 100%;
+    *width: 100%;
+  }*/
+  .about-me-span.span3 {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+    *width: 100%;
   }
   .row-fluid .span2 {
     width: 14.3646408839779%;
@@ -938,6 +944,7 @@
   .carousel-caption {
     position: static;
   }
+
 }
 
 @media (max-width: 979px) {
@@ -964,7 +971,7 @@
   }
   .navbar .brand {
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 0;
     margin: 0 0 0 -5px;
   }
   .nav-collapse {

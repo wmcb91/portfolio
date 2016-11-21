@@ -10,7 +10,20 @@ em {
 
 section {
   padding-bottom: 0;
-  padding-top: 100px;
+  padding-top: 80px;
+}
+
+/* --- START MOBILE DEVICE ---*/
+@media (max-width: 480px) {
+  section {
+    padding-bottom: 0;
+    padding-top: 40px;
+  }
+  hr.half {
+    margin: 20px 0;
+  }
+/* --- END MOBILE DEVICE ---*/
+
 }
 
 
@@ -19,7 +32,7 @@ section {
   clear: left;
   float: left;
   height: 80px;
-  margin: 1px 15px 0 0;
+  margin: 1px 15px 4px 0;
   width: 80px;
 }
 
@@ -31,6 +44,31 @@ section {
 .sub-title {
   color: #90AD99;
 }
+
+/* --- START MOBILE DEVICE ---*/
+@media (max-width: 480px) {
+  .navbar .brand span {
+    font-size: 175%;
+    margin-left: -15px;
+    margin-right: 18px;
+  }
+  .navbar .brand span small {
+    font-size: 12px;
+  }
+  .container, .navbar .container {
+    padding-left: 5px;
+  }
+  img.logo {
+    height: 65px;
+    margin-right: 0;
+    margin-top: 10px;
+    width: 65px;
+  }
+  span {
+    padding-right: 0;
+  }
+}
+/* --- END MOBILE DEVICE ---*/
 /* --- END LOGO AND TITLE ---*/
 
 
@@ -42,7 +80,6 @@ section {
 .nav-collapse {
   font-size: 17px;
 }
-
 
 .da-slide .slide-header {
   background-color: rgba(0, 0, 0, 0.65);
@@ -65,7 +102,52 @@ section {
   border-radius: 170px;
   height: 300px;
 }
+
+/* --- START MOBILE DEVICE ---*/
+@media (max-width: 480px) {
+  .banner-rotator,
+  .action-banner-bg,
+  .action-banner-bg-top {
+    display: none;
+  }
+  .needhead {
+    max-height: 0;
+    padding-top: 0;
+  }
+  .my-photo {
+    display: block;
+    border-radius: 170px;
+    height: 300px;
+  }
+}
+/* --- END MOBILE DEVICE ---*/
 /* --- END HEADER IMAGE AND SLIDER ---*/
+
+
+
+
+/* ------ START ABOUT ME SECTION ------*/
+p.features,
+p.features:hover {
+  border-bottom: none;
+  padding-bottom: 0;
+  -webkit-transition: none;
+}
+
+/* --- START MOBILE DEVICE ---*/
+@media (max-width: 480px) {
+  #bio-section {
+    padding: 0;
+  }
+  p.features {
+    padding: 0 15px 15px;
+  }
+}
+/* --- END MOBILE DEVICE ---*/
+/* --- END ABOUT ME SECTION ---*/
+
+
+
 
 
 /* --- START DEVELOPMENT SKILL ICONS ---*/
@@ -103,6 +185,24 @@ section {
   width: 90%;
   z-index: -1;
 }
+
+.devicon-row {
+  margin-bottom: 25px;
+}
+
+/* --- START MOBILE DEVICE ---*/
+@media (max-width: 480px) {
+  .span2.devicon {
+    display: inline-block;
+    float: none;
+    width: 30%;
+    margin: 0;
+  }
+  .devicon-row {
+    margin-bottom: 0;
+  }
+}
+/* --- END MOBILE DEVICE ---*/
 /* --- END DEVELOPMENT SKILL ICONS ---*/
 
 
@@ -118,6 +218,11 @@ section {
   border-top: 3px solid #004E64;
   border-right: 3px solid #004E64;
   height: 310px;
+}
+
+.fa-github,
+.fa-link {
+  color: #fff;
 }
 
 .thumbnail {
@@ -159,7 +264,9 @@ section#contact-section {
 }
 
 .contact-icons {
+  box-sizing: border-box;
   margin-top: 35px;
+  padding: 10px;
   text-align: center;
 }
 

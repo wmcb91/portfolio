@@ -450,8 +450,14 @@ p.caption-descr a
 }
 .navbar .brand
 {	max-height: 60px;}
-.navbar .brand span{font-size:200%; padding-top:16px; padding-left:10px;display:inline-block; color:#004E64; font-weight: bold;}
-
+.navbar .brand span {
+  font-size: 200%;
+  padding-top: 16px;
+  padding-left: 0px;
+  display: inline-block;
+  color: #004E64;
+  font-weight: bold;
+}
 .nav-reaction
 {
 	background: #fff;
@@ -2115,7 +2121,7 @@ video
 	height: 51px;
 	overflow: hidden;
 	position: fixed;
-	right: 13px;
+	left: 8px;
 	text-decoration: none;
 	text-indent: 100%;
 	width: 51px;
@@ -2938,8 +2944,8 @@ padding-right:0px;
 	}
 	.container, .navbar .container
 	{
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 .headertop{
@@ -2955,7 +2961,7 @@ margin-left: 5%;
 	display: none;
 }
 #main-nav select {
-	display: inline-block;
+	display: none;
 	width: 90% !important;
 	margin-left:5%;
 }
