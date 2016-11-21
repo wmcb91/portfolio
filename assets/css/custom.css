@@ -1,9 +1,6 @@
 /*My custom CSS*/
 
-/*sizing my logo*/
 body {
-  /*font-family: 'NTR';*/
-  /*font-family: 'Palanquin';*/
   font-family: 'Hind Siliguri';
 }
 
@@ -11,6 +8,13 @@ em {
   margin-right: 2px;
 }
 
+section {
+  padding-bottom: 0;
+  padding-top: 100px;
+}
+
+
+/* --- START LOGO AND TITLE ---*/
 .logo {
   clear: left;
   float: left;
@@ -27,7 +31,10 @@ em {
 .sub-title {
   color: #90AD99;
 }
+/* --- END LOGO AND TITLE ---*/
 
+
+/* --- START HEADER IMAGE AND SLIDER ---*/
 .scroller-spy {
   font-size: 17px;
 }
@@ -39,7 +46,6 @@ em {
 
 .da-slide .slide-header {
   background-color: rgba(0, 0, 0, 0.65);
-  /*font-family: 'Palanquin';*/
   font-family: 'Hind Siliguri';
 }
 
@@ -59,33 +65,10 @@ em {
   border-radius: 170px;
   height: 300px;
 }
-
-.stranger {
-  color: #ab1300;
-}
-
-.stranger:hover {
-  color: #ab1300;
-  opacity: .7;
-  text-decoration: none;
-}
-
-.golfer {
-  color: #547f0b;
-}
-
-.golfer:hover {
-  color: #547f0b;
-  opacity: .7;
-  text-decoration: none;
-}
-
-.flix:hover {
-  text-decoration: none;
-}
+/* --- END HEADER IMAGE AND SLIDER ---*/
 
 
-
+/* --- START DEVELOPMENT SKILL ICONS ---*/
 .devicon {
   display: block;
   padding: 20px;
@@ -120,7 +103,11 @@ em {
   width: 90%;
   z-index: -1;
 }
+/* --- END DEVELOPMENT SKILL ICONS ---*/
 
+
+
+/* --- START PROJECTS ---*/
 .main-project {
   display: none;
 }
@@ -153,10 +140,22 @@ em {
   color: #0099ee;
   float: none;
 }
+/* --- END PROJECTS ---*/
+
+
+/* --- START CONTACT SECTION ---*/
+section#contact-section {
+  padding-bottom: 0;
+  padding-top: 100px;
+}
 
 
 .color-bottom-line {
   text-align: center;
+}
+
+.contact-header {
+  margin-top: 0;
 }
 
 .contact-icons {
@@ -206,11 +205,17 @@ em {
   text-align: center;
   width: 100%;
 }
+/* --- END CONTACT SECTION ---*/
 
+
+
+/* --- START FOOTER ---*/
 .footer {
   font-size: 17px;
 }
 
 #footer-section {
+  padding-top: 50px;
   padding-bottom: 0;
 }
+/* --- END FOOTER ---*/
