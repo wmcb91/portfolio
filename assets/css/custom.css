@@ -161,7 +161,17 @@ em {
 
 .contact-icons {
   margin-top: 35px;
+  text-align: center;
 }
+
+.contact-icon {
+  display: block;
+  font-size: .9em;
+  text-align: center;
+  margin: 0;
+  width: 33%;
+}
+
 
 .linked {
   background-image: url("../../assets/css/genericons-2/source/svg/linkedin-alt.svg");
@@ -189,6 +199,12 @@ em {
   margin: 0 6px 3px;
   height: 45px;
   width: 45px;
+}
+
+.icon-description {
+  /*clear: both;*/
+  text-align: center;
+  width: 100%;
 }
 
 .footer {
