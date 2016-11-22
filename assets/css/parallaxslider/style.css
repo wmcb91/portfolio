@@ -152,6 +152,7 @@ color:#fff;
 	-moz-box-sizing:border-box;
 }
 .da-dots{
+	display: none;
 	width: 100%;
 	position: absolute;
 	text-align: center;

@@ -65,10 +65,8 @@ body
 	/************** TOP BANNER INDEX & 404 ************/
 .action-banner-bg
 {
-	/*background: #004E64 url(../img/purplesky-transfer-lg.png) top center repeat;*/
-	/*background: #004E64 url(../img/purplesky-transfer-md.png) top center repeat;*/
-	/*background: #004E64 url(../img/purplesky-transfer-sm.jpg) top center repeat;*/
-	background: #004E64 url(../img/purplesky-transfer-xsm.jpg) top center repeat;
+	background: #004E64 url(../img/purplesky-transfer-sm.jpg) top center repeat;
+	/*background: #004E64 url(../img/purplesky-transfer-xsm.jpg) top center repeat;*/
 	background-size: 100% 100%;
 	box-shadow: 0px 5px 12px rgba(50, 50, 50, 0.35) inset;
 	height: 100%;
@@ -168,7 +166,8 @@ body
 .needhead
 {
 	color: #fff;
-	height: 650px;
+	/*height: 650px;*/
+  height: 100vh;
 	margin-bottom: 0;
 	margin-top: -40px;
 	overflow: hidden;

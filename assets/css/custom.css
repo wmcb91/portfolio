@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Hind Siliguri';
+  cursor: auto;
 }
 
 em {
@@ -13,7 +14,7 @@ section {
   padding-top: 80px;
 }
 
-/* --- START MOBILE DEVICE ---*/
+/* --- START SITE-WIDE MOBILE DEVICE RULES---*/
 @media (max-width: 480px) {
   section {
     padding-bottom: 0;
@@ -22,7 +23,7 @@ section {
   hr.half {
     margin: 20px 0;
   }
-/* --- END MOBILE DEVICE ---*/
+/* --- END SITE-WIDE MOBILE DEVICE RULES ---*/
 
 }
 
@@ -34,15 +35,27 @@ section {
   height: 80px;
   margin: 1px 15px 4px 0;
   width: 80px;
+  user-select: none;
+  pointer-events: none;
 }
 
 .brand {
   float: left;
   position: relative;
+  user-select: none;
+  pointer-events: none;
 }
 
 .sub-title {
   color: #90AD99;
+}
+
+.scroller-spy {
+  font-size: 17px;
+}
+
+.nav-collapse {
+  font-size: 17px;
 }
 
 /* --- START MOBILE DEVICE ---*/
@@ -73,51 +86,75 @@ section {
 
 
 /* --- START HEADER IMAGE AND SLIDER ---*/
-.scroller-spy {
-  font-size: 17px;
+.over-image-title {
+  position: relative;
+  text-align: center;
+  top: 300px;
 }
 
-.nav-collapse {
-  font-size: 17px;
-}
-
-.da-slide .slide-header {
-  background-color: rgba(0, 0, 0, 0.65);
+.name-header,
+.dev-header {
   font-family: 'Hind Siliguri';
+  text-transform: uppercase;
+  /*user-select: none;*/
+  pointer-events: none;
 }
 
-.da-slide.da-slide-current .slides,
-.da-slide.da-slide-toleft .slides,
-.da-slide.da-slide-toright .slides {
-  background-color: rgba(0, 0, 0, 0.65);
-  color: #fff;
-  /*font-family: 'Palanquin';*/
-  font-family: 'Hind Siliguri';
-  font-size: 1.4em;
-  height: auto;
-  padding: 8px 10px 15px;
+.name-header {
+  font-size: 7em;
 }
 
-.my-photo {
-  border-radius: 170px;
-  height: 300px;
+.dev-header {
+  font-size: 3em;
+  margin-top: 35px;
 }
 
-/* --- START MOBILE DEVICE ---*/
+.photo-cred {
+  bottom: 0;
+  color: #f7f7f7;
+  font-size: .75em;
+  left: 3px;
+  position: absolute;
+  z-index: 999;
+}
+/* --- START MOBILE DEVICE FORMATTING---*/
+@media (min-width: 768px) and (max-width: 980px) {
+  .over-image-title {
+    top: 250px;
+  }
+  .name-header {
+    font-size: 6em;
+  }
+
+  .dev-header {
+    font-size: 2.6em;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .over-image-title {
+    top: 100px;
+  }
+  .name-header {
+    font-size: 5em;
+  }
+  .dev-header {
+    font-size: 2em;
+    margin-top: 5px;
+  }
+  .photo-cred {
+    font-size: .7em;
+    left: 25px;
+  }
+}
 @media (max-width: 480px) {
-  .banner-rotator,
-  .action-banner-bg,
-  .action-banner-bg-top {
-    display: none;
+  .name-header {
+    font-size: 7em;
   }
-  .needhead {
-    max-height: 0;
-    padding-top: 0;
-  }
-  .my-photo {
-    display: block;
-    border-radius: 170px;
-    height: 300px;
+
+  .dev-header {
+    font-size: 3em;
+    margin-top: 35px;
   }
 }
 /* --- END MOBILE DEVICE ---*/
@@ -134,8 +171,26 @@ p.features:hover {
   -webkit-transition: none;
 }
 
-/* --- START MOBILE DEVICE ---*/
+.my-photo {
+  border-radius: 170px;
+  height: 300px;
+}
+
+/* --- START MOBILE DEVICE FORMATTING---*/
+@media (max-width: 767px) {
+  #bio-section {
+    padding-top: 20px;
+  }
+  p.features {
+    padding: 0 40px 15px;
+  }
+}
 @media (max-width: 480px) {
+  .my-photo {
+    display: block;
+    border-radius: 170px;
+    height: 300px;
+  }
   #bio-section {
     padding: 0;
   }
@@ -156,6 +211,8 @@ p.features:hover {
   padding: 20px;
   position: relative;
   transition: 0.6s;
+  user-select: none;
+  pointer-events: none;
 }
 
 .devicon:hover {
@@ -191,17 +248,23 @@ p.features:hover {
 }
 
 /* --- START MOBILE DEVICE ---*/
-@media (max-width: 480px) {
-  .span2.devicon {
-    display: inline-block;
-    float: none;
-    width: 30%;
-    margin: 0;
+  @media (max-width: 767px) {
+    .span2.devicon {
+      display: inline-block;
+      float: none;
+      width: 25%;
+      margin: 0;
+    }
+    .devicon-row {
+      margin-bottom: 0;
+    }
   }
-  .devicon-row {
-    margin-bottom: 0;
+  @media (max-width: 480px) {
+    .span2.devicon {
+      width: 30%;
+      margin: 0;
+    }
   }
-}
 /* --- END MOBILE DEVICE ---*/
 /* --- END DEVELOPMENT SKILL ICONS ---*/
 
@@ -230,6 +293,10 @@ p.features:hover {
   padding: 0 0px 15px;
 }
 
+.project-item-overlay > .inner > ul > li > a.proj-btn {
+  box-shadow: none;
+}
+
 .thumbnail .caption {
   padding: 7px 9px;
 }
@@ -245,6 +312,37 @@ p.features:hover {
   color: #0099ee;
   float: none;
 }
+
+/* --- START MOBILE DEVICE ---*/
+@media (max-width: 1200px) {
+  .project-2 {
+    height: 270px;
+  }
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .project-2 {
+    height: 200px;
+  }
+  .thumbnail .caption {
+    padding: 3px 9px;
+  }
+  .thumbnail .caption .caption-descr {
+    margin: 5px 0;
+
+    font-size: 11px;
+  }
+}
+@media (max-width: 767px) {
+  .project-2 {
+    height: 340px;
+  }
+}
+@media (max-width: 480px) {
+  .project-2 {
+    height: 200px;
+  }
+}
+/* --- END MOBILE DEVICE ---*/
 /* --- END PROJECTS ---*/
 
 
