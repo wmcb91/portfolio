@@ -26,6 +26,12 @@ section {
   hr.half {
     margin: 20px 0;
   }
+  .large-text {
+    font-size: 1.6em;
+  }
+  .standart-h2title {
+    padding: 0 15px;
+  }
 }
 /* --- END SITE-WIDE MOBILE DEVICE RULES ---*/
 /* ------------------------------- */
@@ -74,32 +80,37 @@ section {
 }
 @media (max-width: 480px) {
   #brand {
-    padding-right: 30px;
+    padding-right: 40px;
   }
-  .navbar-reaction {
-    position: static !important;
-  }
-  /*.navbar .brand span {
-    font-size: 175%;
-    margin-left: -15px;
-    margin-right: 18px;
-  }
-  .navbar .brand span small {
-    font-size: 12px;
+  .navbar .brand span {
+    font-size: 1.9em;
   }
   .container, .navbar .container {
-    padding-left: 5px;
-  }*/
-  img.logo {
-    height: 65px;
+    padding: 0 0px;
+  }
+  .logo {
+    height: 60px;
     margin-right: 0;
     margin-top: 10px;
-    width: 65px;
   }
   span {
     padding-right: 0;
   }
 }
+@media (max-width: 370px) {
+  .navbar .brand span {
+    font-size: 1.8em;
+  }
+  .navbar .brand span small {
+    font-size: 12px;
+  }
+  .logo {
+    height: 50px;
+    margin-right: 0;
+    margin-top: 15px;
+  }
+}
+
 /* --- END MOBILE DEVICE ---*/
 /* --- END LOGO AND TITLE ---*/
 /* ------------------------------- */
@@ -178,7 +189,16 @@ section {
     display: none;
   }
   .container {
-    margin-top: -540px;
+    margin-top: -270px;
+  }
+  .bio-img {
+    position: absolute;
+    top: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    margin-top: -285px;
   }
 }
 /* --- END MOBILE DEVICE ---*/
@@ -264,20 +284,36 @@ section {
     padding: 0 20px;
   }
   .my-story p {
-    font-size: 1.02em;
-    line-height: 1.29em;
-    text-align: justify;
+    font-size: 1.27em;
+    line-height: 1.49em;
   }
   .my-story h3 {
-    font-size: 1.4em;
+    font-size: 1.43em;
     line-height: 1.0em;
     margin: 0 0 10px;
-    /*text-align: center;*/
   }
   .my-photo {
-    display: block;
-    border-radius: 150px;
-    height: 200px;
+    height: 250px;
+  }
+  #bio-section {
+    padding: 0;
+  }
+}
+@media (max-width: 370px) {
+  .my-story {
+    padding: 0 20px;
+  }
+  .my-story p {
+    font-size: 1.3em;
+    line-height: 1.49em;
+  }
+  .my-story h3 {
+    font-size: 1.6em;
+    line-height: 1.0em;
+    margin: 0 0 10px;
+  }
+  .my-photo {
+    height: 230px;
   }
   #bio-section {
     padding: 0;
@@ -293,10 +329,13 @@ section {
 /* --- START SKILLS SECTION ---*/
 p.features,
 p.features:hover {
+  font-family: 'Hind Siliguri';
   border-bottom: none;
   color: #4f4f4f;
   padding-bottom: 0;
   -webkit-transition: none;
+  pointer-events: none;
+  text-align: left;
 }
 /* --- START DEVELOPMENT SKILL ICONS ---*/
 .devicon {
@@ -339,29 +378,44 @@ p.features:hover {
 }
 
 /* --- START MOBILE DEVICE ---*/
-  @media (max-width: 767px) {
-    .span2.devicon {
-      display: inline-block;
-      float: none;
-      width: 25%;
-      margin: 0;
-    }
-    .devicon-row {
-      margin-bottom: 0;
-    }
-    p.features {
-      padding: 0 40px 15px;
-    }
+@media (max-width: 767px) {
+  .span2.devicon {
+    display: inline-block;
+    float: none;
+    width: 25%;
+    margin: 0;
   }
-  @media (max-width: 480px) {
-    .span2.devicon {
-      width: 30%;
-      margin: 0;
-    }
-    p.features {
-      padding: 0 15px 15px;
-    }
+  .devicon-row {
+    margin-bottom: 0;
   }
+  p.features {
+    padding: 0 40px 15px;
+  }
+}
+@media (max-width: 480px) {
+  .span2.devicon {
+    width: 31.5%;
+    margin: 0;
+  }
+  h3.features-title {
+    font-size: 1.6em;
+  }
+  p.features {
+    font-size: 1.27em;
+    line-height: 1.49em;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 370px) {
+  .span2.devicon {
+    width: 31.5%;
+    margin: 0;
+  }
+  p.features {
+    font-size: 1.3em;
+    line-height: 1.49em;
+  }
+}
 /* --- END MOBILE DEVICE ---*/
 /* --- END DEVELOPMENT SKILL ICONS ---*/
 /* --- END SKILLS SECTION ---*/
@@ -373,6 +427,10 @@ p.features:hover {
 /* --- START PROJECTS ---*/
 .main-project {
   display: none;
+}
+
+.project-item-overlay > .inner > ul > li > a.proj-btn {
+  box-shadow: none;
 }
 
 .project-2 {
@@ -393,10 +451,6 @@ p.features:hover {
   padding: 0 0px 15px;
 }
 
-.project-item-overlay > .inner > ul > li > a.proj-btn {
-  box-shadow: none;
-}
-
 .thumbnail .caption {
   padding: 7px 9px;
 }
@@ -411,6 +465,11 @@ p.features:hover {
 .thumbnail .caption .caption-descr #nel {
   color: #0099ee;
   float: none;
+}
+
+.thumbnail:hover h4,
+.thumbnail:hover h3 {
+	margin-top: -50px;
 }
 
 /* --- START MOBILE DEVICE ---*/
@@ -428,7 +487,6 @@ p.features:hover {
   }
   .thumbnail .caption .caption-descr {
     margin: 5px 0;
-
     font-size: 11px;
   }
 }
@@ -441,6 +499,26 @@ p.features:hover {
   .project-2 {
     height: 200px;
   }
+  .p-title.standart-h3title {
+    margin-top: 23px;
+    font-size: 1.5em;
+  }
+  .thumbnail .caption .caption-descr {
+    padding: 0;
+  }
+  .thumbnail .caption {
+    height: 84px;
+  }
+  .transit-to-top {
+    height: 85px;
+  }
+  .standart-h3title {
+    margin-bottom: 30px;
+  }
+  .thumbnail:hover h4,
+  .thumbnail:hover h3 {
+  	margin-top: -70px;
+  }
 }
 /* --- END MOBILE DEVICE ---*/
 /* --- END PROJECTS ---*/
@@ -452,30 +530,21 @@ p.features:hover {
 /* --- START CONTACT SECTION ---*/
 section#contact-section {
   padding-bottom: 0;
-  padding-top: 100px;
-}
-
-.color-bottom-line {
+  padding-top: 80px;
   text-align: center;
 }
 
-.contact-header {
-  margin-top: 0;
-}
-
-.contact-icons {
-  box-sizing: border-box;
-  margin-top: 35px;
-  padding: 10px;
+.contact-icons-div.span4 {
+  float: none;
+  display: inline-block;
+  margin: 35px auto 0;
   text-align: center;
 }
 
 .contact-icon {
-  display: block;
-  font-size: .9em;
-  text-align: center;
-  margin: 0;
-  width: 33%;
+  display: inline-block;
+  font-size: 1em;
+  width: 32.3%;
 }
 
 .linked {
@@ -507,10 +576,40 @@ section#contact-section {
 }
 
 .icon-description {
-  /*clear: both;*/
   text-align: center;
   width: 100%;
 }
+
+@media (max-width: 767px) {
+  .contact-icons-div.span4 {
+    width: 44%;
+  }
+  .contact-icon {
+    font-size: .9em;
+    width: 32.3%;
+  }
+}
+@media (max-width: 480px) {
+  .contact-icons-div.span4 {
+    width: 56%;
+  }
+  .contact-icon {
+    font-size: 1.1em;
+    width: 32.3%;
+  }
+  .contact-text {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 370px) {
+  .contact-icons-div.span4 {
+    width: 65%;
+  }
+  .contact-icon {
+    font-size: 1.1em;
+  }
+}
+/* --- END MOBILE DEVICE ---*/
 /* --- END CONTACT SECTION ---*/
 /* ------------------------------- */
 
