@@ -3,6 +3,7 @@
 body {
   font-family: 'Hind Siliguri';
   cursor: auto;
+  color: #4f4f4f;
 }
 
 em {
@@ -12,10 +13,12 @@ em {
 section {
   padding-bottom: 0;
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
 /* --- START SITE-WIDE MOBILE DEVICE RULES---*/
 @media (max-width: 480px) {
+
   section {
     padding-bottom: 0;
     padding-top: 40px;
@@ -23,27 +26,32 @@ section {
   hr.half {
     margin: 20px 0;
   }
-/* --- END SITE-WIDE MOBILE DEVICE RULES ---*/
-
 }
+/* --- END SITE-WIDE MOBILE DEVICE RULES ---*/
+/* ------------------------------- */
 
 
+
+
+/* ------------------------------- */
 /* --- START LOGO AND TITLE ---*/
 .logo {
   clear: left;
   float: left;
-  height: 80px;
-  margin: 1px 15px 4px 0;
-  width: 80px;
+  height: 70px;
+  margin: 6px 15px 4px 0;
   user-select: none;
   pointer-events: none;
 }
 
+.logo-div {
+  margin-left: 5px;
+}
+
 .brand {
-  float: left;
-  position: relative;
   user-select: none;
   pointer-events: none;
+  padding: 0;
 }
 
 .sub-title {
@@ -59,8 +67,19 @@ section {
 }
 
 /* --- START MOBILE DEVICE ---*/
+@media (max-width: 767px) {
+  #brand {
+    padding-right: 80px;
+  }
+}
 @media (max-width: 480px) {
-  .navbar .brand span {
+  #brand {
+    padding-right: 30px;
+  }
+  .navbar-reaction {
+    position: static !important;
+  }
+  /*.navbar .brand span {
     font-size: 175%;
     margin-left: -15px;
     margin-right: 18px;
@@ -70,7 +89,7 @@ section {
   }
   .container, .navbar .container {
     padding-left: 5px;
-  }
+  }*/
   img.logo {
     height: 65px;
     margin-right: 0;
@@ -83,8 +102,11 @@ section {
 }
 /* --- END MOBILE DEVICE ---*/
 /* --- END LOGO AND TITLE ---*/
+/* ------------------------------- */
 
 
+
+/* ------------------------------- */
 /* --- START HEADER IMAGE AND SLIDER ---*/
 .over-image-title {
   position: relative;
@@ -148,63 +170,134 @@ section {
   }
 }
 @media (max-width: 480px) {
-  .name-header {
-    font-size: 7em;
+  .action-banner-bg,
+  .over-image-title,
+  .name-header,
+  .dev-header,
+  .photo-cred {
+    display: none;
   }
-
-  .dev-header {
-    font-size: 3em;
-    margin-top: 35px;
+  .container {
+    margin-top: -540px;
   }
 }
 /* --- END MOBILE DEVICE ---*/
 /* --- END HEADER IMAGE AND SLIDER ---*/
+/* ------------------------------- */
 
 
 
-
+/* ------------------------------- */
 /* ------ START ABOUT ME SECTION ------*/
-p.features,
-p.features:hover {
-  border-bottom: none;
-  padding-bottom: 0;
-  -webkit-transition: none;
+.my-story {
+  text-align: left;
+  padding-left: 8.5470%;
+}
+
+.my-story p {
+  font-size: 1.24em;
+  line-height: 1.25em;
+}
+
+.my-story h3 {
+  font-size: 2.9em;
 }
 
 .my-photo {
   border-radius: 170px;
-  height: 300px;
+  height: 280px;
 }
 
-/* --- START MOBILE DEVICE FORMATTING---*/
+/* --- START MOBILE DEVICE FORMATTING --- */
+@media (max-width: 1200px) {
+  .my-story {
+    padding-left: 2.1470%;
+  }
+  .my-story p {
+    font-size: 1.13em;
+    line-height: 1.29em;
+  }
+  .my-story h3 {
+    font-size: 2.3em;
+  }
+  .my-photo {
+    height: 270px;
+  }
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .my-story {
+    padding-left: 0;
+  }
+  .my-story p {
+    font-size: 1.1em;
+    line-height: 1.29em;
+  }
+  .my-story h3 {
+    font-size: 2.1em;
+    margin: 0;
+  }
+  .my-photo {
+    height: 228px;
+  }
+}
 @media (max-width: 767px) {
   #bio-section {
     padding-top: 20px;
   }
-  p.features {
-    padding: 0 40px 15px;
+  .my-story {
+    padding: 0 30px;
+  }
+  .my-story p {
+    font-size: 1.1em;
+    line-height: 1.29em;
+  }
+  .my-story h3 {
+    font-size: 2.1em;
+    margin: 0;
+  }
+  .my-photo {
+    height: 228px;
   }
 }
 @media (max-width: 480px) {
+  .my-story {
+    padding: 0 20px;
+  }
+  .my-story p {
+    font-size: 1.02em;
+    line-height: 1.29em;
+    text-align: justify;
+  }
+  .my-story h3 {
+    font-size: 1.4em;
+    line-height: 1.0em;
+    margin: 0 0 10px;
+    /*text-align: center;*/
+  }
   .my-photo {
     display: block;
-    border-radius: 170px;
-    height: 300px;
+    border-radius: 150px;
+    height: 200px;
   }
   #bio-section {
     padding: 0;
   }
-  p.features {
-    padding: 0 15px 15px;
-  }
 }
 /* --- END MOBILE DEVICE ---*/
 /* --- END ABOUT ME SECTION ---*/
+/* ------------------------------- */
 
 
 
-
-
+/* ------------------------------- */
+/* --- START SKILLS SECTION ---*/
+p.features,
+p.features:hover {
+  border-bottom: none;
+  color: #4f4f4f;
+  padding-bottom: 0;
+  -webkit-transition: none;
+}
 /* --- START DEVELOPMENT SKILL ICONS ---*/
 .devicon {
   display: block;
@@ -212,6 +305,8 @@ p.features:hover {
   position: relative;
   transition: 0.6s;
   user-select: none;
+
+/* --- CHANGE THIS WHEN HOVERING WILL MEAN SOMETHING ---*/
   pointer-events: none;
 }
 
@@ -222,10 +317,6 @@ p.features:hover {
 .devicon > img {
   float: left;
 }
-
-/*.devicon > img:hover {
-  opacity: .7;
-}*/
 
 .devicon-center {
   position: absolute;
@@ -258,18 +349,27 @@ p.features:hover {
     .devicon-row {
       margin-bottom: 0;
     }
+    p.features {
+      padding: 0 40px 15px;
+    }
   }
   @media (max-width: 480px) {
     .span2.devicon {
       width: 30%;
       margin: 0;
     }
+    p.features {
+      padding: 0 15px 15px;
+    }
   }
 /* --- END MOBILE DEVICE ---*/
 /* --- END DEVELOPMENT SKILL ICONS ---*/
+/* --- END SKILLS SECTION ---*/
+/* ------------------------------- */
 
 
 
+/* ------------------------------- */
 /* --- START PROJECTS ---*/
 .main-project {
   display: none;
@@ -344,14 +444,16 @@ p.features:hover {
 }
 /* --- END MOBILE DEVICE ---*/
 /* --- END PROJECTS ---*/
+/* ------------------------------- */
 
 
+
+/* ------------------------------- */
 /* --- START CONTACT SECTION ---*/
 section#contact-section {
   padding-bottom: 0;
   padding-top: 100px;
 }
-
 
 .color-bottom-line {
   text-align: center;
@@ -375,7 +477,6 @@ section#contact-section {
   margin: 0;
   width: 33%;
 }
-
 
 .linked {
   background-image: url("../../assets/css/genericons-2/source/svg/linkedin-alt.svg");
@@ -411,9 +512,11 @@ section#contact-section {
   width: 100%;
 }
 /* --- END CONTACT SECTION ---*/
+/* ------------------------------- */
 
 
 
+/* ------------------------------- */
 /* --- START FOOTER ---*/
 .footer {
   font-size: 17px;
@@ -424,3 +527,4 @@ section#contact-section {
   padding-bottom: 0;
 }
 /* --- END FOOTER ---*/
+/* ------------------------------- */
