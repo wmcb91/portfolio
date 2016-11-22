@@ -597,6 +597,9 @@ p.features:hover {
   }
 }
 @media (max-width: 480px) {
+  #container-folio {
+    padding: 0 2%;
+  }
   .p-title.standart-h3title {
     margin-top: 23px;
     font-size: 1.5em;
@@ -619,6 +622,17 @@ p.features:hover {
   .thumbnail:hover h4,
   .thumbnail:hover h3 {
   	margin-top: -70px;
+  }
+}
+@media (max-width: 370px) {
+  #container-folio {
+    padding: 0;
+  }
+  .thumbnail .caption .caption-descr {
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: left;
+    padding: 0;
   }
 }
 /* --- END MOBILE DEVICE ---*/
