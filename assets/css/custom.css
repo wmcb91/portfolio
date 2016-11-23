@@ -472,7 +472,7 @@ p.features:hover {
 /* ------------------------------- */
 /* --- START PROJECTS ---*/
 .main-project {
-  /*display: none;*/
+  display: none;
 }
 
 .project-item-overlay > .inner > ul > li > a.proj-btn {
