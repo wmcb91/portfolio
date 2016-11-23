@@ -5,12 +5,12 @@ $(document).ready(function(){
 
     $(function () {
       $(window).scroll(function () {
-        if ($(this).scrollTop() > 150) {
+        if ($(this).scrollTop() > (window.innerHeight * 0.2)) {
           $('.navbar').fadeIn();
-          $('.over-image-title').fadeOut(1500);
+          $('.over-image-title').fadeOut(1050);
         } else {
           $('.navbar').fadeOut();
-          $('.over-image-title').fadeIn();
+          $('.over-image-title').fadeIn(350);
         }
       });
     });

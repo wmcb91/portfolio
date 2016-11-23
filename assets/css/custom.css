@@ -110,6 +110,16 @@ section {
 }
 
 /* --- START MOBILE DEVICE ---*/
+@media (max-width: 1040px) {
+  #nav > li > a:hover {
+    color: #004E64;
+    background-color: #FAFAFA;
+  }
+  #nav > li.active > a {
+    color: #fff;
+    background-color: #004E64;
+  }
+}
 @media (max-width: 767px) {
   #brand {
     padding-right: 80px;
@@ -462,7 +472,7 @@ p.features:hover {
 /* ------------------------------- */
 /* --- START PROJECTS ---*/
 .main-project {
-  display: none;
+  /*display: none;*/
 }
 
 .project-item-overlay > .inner > ul > li > a.proj-btn {
@@ -536,7 +546,13 @@ p.features:hover {
   }
   .thumbnail .caption .caption-descr {
     font-size: 1.13em;
-    line-height: 1.2em;
+    line-height: 1.3em;
+  }
+  .thumbnail .caption > .transit-to-top > .caption-descr.ghcp-descr {
+    line-height: 1.1em;
+  }
+  .thumbnail:hover .ghcp-title {
+    margin-top: -71px;
   }
   .thumbnail .caption {
     height: 84px;
@@ -549,9 +565,15 @@ p.features:hover {
   }
   .thumbnail:hover h4,
   .thumbnail:hover h3 {
-  	margin-top: -65px;
+  	margin-top: -68px;
   }
 }
+/*@media (max-width: 1200px) {
+  .thumbnail .caption .caption-descr {
+    font-size: 1.13em;
+    line-height: 1.2em;
+  }
+}*/
 @media (min-width: 768px) and (max-width: 980px) {
   .project-2 {
     height: 200px;
@@ -690,37 +712,22 @@ section#contact-section {
   width: 32.3%;
 }
 
-.linked {
-  background-image: url("../../assets/css/genericons-2/source/svg/linkedin-alt.svg");
-  background-size: cover;
-  display: inline-block;
-  margin: 0 6px;
-  width: 48px;
-  height: 48px;
+.github-contact {
+  color: #303030;
+}
+.github-contact:hover {
+  color: #5f5f5f;
 }
 
-.github {
-  border-radius: 45px;
-  background-image: url("../../assets/css/genericons-2/source/svg/github.svg");
-  background-size: cover;
-  display: inline-block;
-  margin: 0 6px 3px;
-  height: 45px;
-  width: 45px;
-}
-
-.resume {
-  background-image: url("../../assets/css/genericons-2/source/svg/resume-small.png");
-  background-size: cover;
-  display: inline-block;
-  margin: 0 6px 3px;
-  height: 45px;
-  width: 45px;
+.resume-link {
+  font-size: 3.3em;
+  padding-bottom: 3px;
 }
 
 .icon-description {
   text-align: center;
   width: 100%;
+  pointer-events: none;
 }
 @media (max-width: 1080px) {
   .tel {
