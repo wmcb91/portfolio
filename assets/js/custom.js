@@ -11,7 +11,7 @@ jQuery(function () {
 			speed:       'normal',                          // 'fast' - faster animation speed , 'normal', 'slow'
 			autoArrows:  false                            // disable generation of arrow mark-up
 		});
-	
+
 });
 
 // initialise plugins
@@ -22,7 +22,7 @@ jQuery(function () {
 			speed:       'normal',                          // 'fast' - faster animation speed , 'normal', 'slow'
 			autoArrows:  false                            // disable generation of arrow mark-up
 		});
-	
+
 });
 
 jQuery(function (jQuery) {
@@ -31,7 +31,7 @@ jQuery(function (jQuery) {
             jQuery(this).children('ul').css('visibility', 'visible');
         }).mouseout(function () {
             jQuery(this).children('ul').css('visibility', 'hidden');
-        })
+        });
     }
 });
 
@@ -41,12 +41,12 @@ prettyPhoto
 ***************************************************/
 
 jQuery(document).ready(function () {
-    jQuery("a[rel^='prettyPhoto']").prettyPhoto({ 
-	animation_speed: 'normal', 
-	theme: 'light_square', 
-	slideshow: 3000, 
-	autoplay_slideshow: false, 
-	social_tools: false 
+    jQuery("a[rel^='prettyPhoto']").prettyPhoto({
+	animation_speed: 'normal',
+	theme: 'light_square',
+	slideshow: 3000,
+	autoplay_slideshow: false,
+	social_tools: false
 	});
 
 });
@@ -92,27 +92,27 @@ jQuery(function (jQuery) {
 });
 
 jQuery(document).ready(function(jQuery) {
-	
+
 	jQuery('.project-item-image-container').hover(function () {
-	
+
 		jQuery(this).find('.project-item-overlay').fadeTo('slow', 1);
 	},function () {
 		jQuery(this).find('.project-item-overlay').stop().fadeTo('slow', 0);
 	});
-	
+
 });
 
 
 jQuery(document).ready(function() {
-			
+
 			var defaults = {
-	  			containerID: 'toTop', // fading element id
+	  		containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear' 
+				easingType: 'linear'
 	 		};
-			
-			
+
+
 			jQuery().UItoTop({ easingType: 'easeOutQuart' });
-			
+
 		});

@@ -2103,11 +2103,11 @@ video
 /**************************** TO TOP (badge to scroll to top)**************/
 #toTop
 {
-	background: #004E64 url(../../assets/img/totop.png) top left no-repeat;
+	background: rgba(0, 78, 100, .6)url(../../assets/img/totop.png) top left no-repeat;
 }
 #toTop:hover
 {
-	background: #0085BD url(../../assets/img/totop.png) top left no-repeat;
+	background: rgba(0, 78, 100, .6) url(../../assets/img/totop.png) top left no-repeat;
 	box-shadow: 6px 6px 4px rgba(50, 50, 50, 0.22);
 	-moz-box-shadow: 6px 6px 4px rgba(50, 50, 50, 0.22);
 	-webkit-box-shadow: 6px 6px 4px rgba(50, 50, 50, 0.22);
@@ -2115,7 +2115,7 @@ video
 #toTop
 {
 	border: none;
-	bottom: 30px;
+	bottom: 20px;
 	display: none;
 	height: 51px;
 	overflow: hidden;

@@ -77,7 +77,7 @@ section {
   height: 70px;
   margin: 6px 15px 4px 0;
   user-select: none;
-  pointer-events: none;
+  /*pointer-events: none;*/
 }
 
 .logo-div {
@@ -86,7 +86,7 @@ section {
 
 .brand {
   user-select: none;
-  pointer-events: none;
+  /*pointer-events: none;*/
   padding: 0;
 }
 
@@ -628,11 +628,18 @@ p.features:hover {
   #container-folio {
     padding: 0;
   }
+  .p-title.standart-h3title {
+    margin-top: 23px;
+    font-size: 1.3em;
+  }
   .thumbnail .caption .caption-descr {
-    font-size: 1em;
+    font-size: .95em;
     line-height: 1.2em;
     text-align: left;
     padding: 0;
+  }
+  .project-item-overlay .inner {
+    top: 15%;
   }
 }
 /* --- END MOBILE DEVICE ---*/
@@ -648,6 +655,11 @@ section#contact-section {
   padding-top: 80px;
   text-align: center;
   overflow: hidden;
+}
+
+.contact-text {
+  font-size: 1.6em;
+  line-height: 1.3em;
 }
 
 .contact-icons-div.span4 {
@@ -703,6 +715,9 @@ section#contact-section {
   .contact-icon {
     font-size: .9em;
     width: 32.3%;
+  }
+  .contact-text {
+    font-size: 1.3em;
   }
 }
 @media (max-width: 480px) {
