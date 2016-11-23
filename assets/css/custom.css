@@ -94,12 +94,19 @@ section {
   color: #90AD99;
 }
 
-.scroller-spy {
+.nav-collapse {
   font-size: 17px;
 }
 
-.nav-collapse {
-  font-size: 17px;
+#nav > li.sfHover > a {
+  color: #004E64;
+  background-color: #FAFAFA;
+}
+
+#nav > li.active > a,
+#nav > li > a:hover {
+  color: #fff;
+  background-color: #004E64;
 }
 
 /* --- START MOBILE DEVICE ---*/
