@@ -662,6 +662,14 @@ section#contact-section {
   line-height: 1.3em;
 }
 
+.contact-text a{
+  color: inherit;
+}
+
+.tel {
+  pointer-events: none;
+}
+
 .contact-icons-div.span4 {
   float: none;
   display: inline-block;
@@ -707,7 +715,11 @@ section#contact-section {
   text-align: center;
   width: 100%;
 }
-
+@media (max-width: 1080px) {
+  .tel {
+    pointer-events: all;
+  }
+}
 @media (max-width: 767px) {
   .contact-icons-div.span4 {
     width: 44%;
