@@ -169,14 +169,14 @@ section {
 .over-image-title {
   position: relative;
   text-align: center;
-  top: 40vh;
+  top: 38vh ;
 }
 
 .name-header,
 .dev-header {
   font-family: 'Hind Siliguri';
   text-transform: uppercase;
-  /*user-select: none;*/
+  user-select: none;
   pointer-events: none;
 }
 
