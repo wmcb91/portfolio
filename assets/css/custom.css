@@ -39,6 +39,9 @@ h2 {
   }
 }
 @media (max-width: 767px) {
+  .needhead {
+    margin-top: 0px;
+  }
   .large-text {
     font-size: 1.5em;
   }
@@ -50,6 +53,9 @@ h2 {
   }
 }
 @media (max-width: 480px) {
+  .needhead {
+    margin-top: 80px;
+  }
   section {
     padding-bottom: 0;
     padding-top: 40px;
@@ -355,7 +361,7 @@ h2 {
     line-height: 1.29em;
   }
   .my-story h3 {
-    font-size: 2.1em;
+    font-size: 1.56em;
     margin: 0;
   }
   .my-photo {
@@ -561,9 +567,8 @@ p.features:hover {
 
 .project-2 {
   box-sizing: border-box;
-  border-left: 3px solid #004E64;
-  border-top: 3px solid #004E64;
-  border-right: 3px solid #004E64;
+  border: 3px solid #004E64;
+  border-bottom: 0;
   height: 310px;
 }
 
@@ -684,17 +689,23 @@ p.features:hover {
   }
 }
 @media (max-width: 767px) {
+  #container-folio {
+    padding: 0 4%;
+  }
   .project-2 {
     height: 50vw;
   }
-  #container-folio {
-    padding: 0 8%;
+  .thumbnail:hover .ghcp-title {
+    margin-top: -65px;
   }
   .thumbnail .caption .caption-descr {
     font-size: 1.13em;
     line-height: 1.2em;
     text-align: left;
     padding: 0;
+  }
+  .thumbnail .caption > .transit-to-top > .caption-descr.ghcp-descr {
+    line-height: 1.2em;
   }
 }
 @media (max-width: 568px) {
@@ -707,7 +718,12 @@ p.features:hover {
 }
 @media (max-width: 480px) {
   #container-folio {
-    padding: 0 2%;
+    padding: 0;
+  }
+  .project-2 {
+    border: 0;
+    border-top: 3px solid #004E64;
+    height: 60vw;
   }
   .p-title.standart-h3title {
     margin-top: 23px;
@@ -715,9 +731,12 @@ p.features:hover {
   }
   .thumbnail .caption .caption-descr {
     font-size: 1.03em;
-    line-height: 1.2em;
+    line-height: 4.5vw;
     text-align: left;
     padding: 0;
+  }
+  .thumbnail .caption > .transit-to-top > .caption-descr.ghcp-descr {
+    line-height: 4.5vw;
   }
   .thumbnail .caption {
     height: 84px;
@@ -734,8 +753,8 @@ p.features:hover {
   }
 }
 @media (max-width: 370px) {
-  #container-folio {
-    padding: 0;
+  .project-2 {
+    height: 56vw;
   }
   .p-title.standart-h3title {
     margin-top: 23px;
@@ -750,6 +769,10 @@ p.features:hover {
   .project-item-overlay .inner {
     top: 15%;
   }
+}
+@media (max-width: 314px) {
+  .thumbnail:hover .ghcp-title {
+    margin-top: -71px;
 }
 /* --- END MOBILE DEVICE ---*/
 /* --- END PROJECTS ---*/
