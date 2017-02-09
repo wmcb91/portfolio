@@ -4,6 +4,7 @@ body {
   font-family: 'Hind Siliguri';
   cursor: auto;
   color: #4f4f4f;
+  text-align: center;
 }
 
 em {
@@ -14,6 +15,10 @@ section {
   padding-bottom: 0;
   padding-top: 80px;
   overflow-x: hidden;
+}
+
+h2 {
+  font-weight: 200;
 }
 
 /* --- START SITE-WIDE MOBILE DEVICE RULES---*/
@@ -643,12 +648,6 @@ p.features:hover {
   	margin-top: -68px;
   }
 }
-/*@media (max-width: 1200px) {
-  .thumbnail .caption .caption-descr {
-    font-size: 1.13em;
-    line-height: 1.2em;
-  }
-}*/
 @media (min-width: 768px) and (max-width: 980px) {
   .project-2 {
     height: 200px;
@@ -666,6 +665,12 @@ p.features:hover {
     line-height: 1.2em;
     text-align: left;
     padding: 0;
+  }
+  .thumbnail .caption > .transit-to-top > .caption-descr.ghcp-descr {
+    line-height: 1.2em;
+  }
+  .thumbnail:hover .ghcp-title {
+    margin-top: -65px;
   }
   .transit-to-top {
     height: 90px;
