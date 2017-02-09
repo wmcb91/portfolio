@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  if (document.body.clientWidth > 980) {
+  if (document.body.clientWidth > 767) {
     $(".navbar").hide();
 
     $(function () {
@@ -15,7 +15,6 @@ $(document).ready(function(){
       });
     });
   } else {
-    return;
+    $(".navbar").show();
   }
-
 });
