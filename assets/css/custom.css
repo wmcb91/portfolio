@@ -773,6 +773,7 @@ p.features:hover {
 @media (max-width: 314px) {
   .thumbnail:hover .ghcp-title {
     margin-top: -71px;
+  }
 }
 /* --- END MOBILE DEVICE ---*/
 /* --- END PROJECTS ---*/
