@@ -589,7 +589,7 @@ p.features:hover {
   }
 }
 @media (max-width: 767px) {
-  #service-section {
+  #skills-section {
     padding-top: 0px;
   }
   .span2.devicon {
