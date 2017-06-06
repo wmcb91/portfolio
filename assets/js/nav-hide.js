@@ -3,12 +3,12 @@ $(document).ready(function(){
   if (document.body.clientWidth > 480) {
     $(function () {
       $(window).scroll(function () {
-        if ($(this).scrollTop() > (window.innerHeight * 0.2)) {
+        if ($(this).scrollTop() > (window.innerHeight * 0.4)) {
           $('.nav-reaction').fadeIn();
-          $('.over-image-title').fadeOut(1050);
+          $('.over-image-title').fadeOut(850);
         } else {
           $('.nav-reaction').fadeOut();
-          $('.over-image-title').fadeIn(350);
+          $('.over-image-title').fadeIn(650);
         }
       });
     });
