@@ -318,9 +318,16 @@ h2 {
   z-index: 999;
 }
 /* --- START MOBILE DEVICE FORMATTING---*/
+@media (max-width: 1460px) {
+  .over-image-title {
+    right: 18%;
+  }
+  .name-header {
+    font-size: 6.4em;
+  }
+}
 @media (min-width: 768px) and (max-width: 980px) {
   .over-image-title {
-    /*top: 200px;*/
     bottom: 0;
   }
   .name-header {
