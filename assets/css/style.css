@@ -162,7 +162,7 @@ body
 /*****************************   END  BREADCRUMP ******************************************/
 
 /************************ NEADHEAD (like jumbotron masthead in bootstrap) ***********/
-.needhead
+.needheader
 {
 	color: #fff;
 	/*height: 650px;*/
@@ -173,7 +173,7 @@ body
 	padding: 40px 0 0px;
 	text-align: left;
 }
-.needhead h1
+.needheader h1
 {
 	background: rgba(0,0,0,0.5);
 	border-left: 4px solid #004E64;
@@ -185,18 +185,18 @@ body
 	text-shadow: 0 1px 4px #000000;
 	text-transform: uppercase;
 }
-.needhead h1 span.top
+.needheader h1 span.top
 {
 	display: inline-block;
 	padding: 5px 10px 5px;
 }
-.needhead h1 span.bottom
+.needheader h1 span.bottom
 {
 	display: inline-block;
 	margin-top: 5px;
 	padding: 5px 10px;
 }
-.needhead p
+.needheader p
 {
 	background: rgba(0,0,0,0.5);
 	border-left: 4px solid #004E64;
@@ -213,11 +213,11 @@ body
 {
 	text-align: right;
 }
-.needhead p.medium
+.needheader p.medium
 {
 	font-size: 120%;
 }
-.needhead span.link-more
+.needheader span.link-more
 {
 	color: #fff;
 	display: inline-block;
@@ -228,7 +228,7 @@ body
 	-transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
-.needhead span.link-more a, .needhead span.link-more a:hover
+.needheader span.link-more a, .needheader span.link-more a:hover
 {
 	color: #fff;
 	-moz-transition: 0.3s;
@@ -239,7 +239,7 @@ body
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
-.needhead span.link-more a span.main-link
+.needheader span.link-more a span.main-link
 {
 	background: rgba(0,0,0,0.8);
 	border: 4px solid #fff;
@@ -254,7 +254,7 @@ body
 	transition: 0.3s;
 
 }
-.needhead span.link-more a span.arrow
+.needheader span.link-more a span.arrow
 {
 	background: rgba(0,0,0,0.8);
 	border: 4px solid #fff;
@@ -268,13 +268,13 @@ body
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
-.needhead span.link-more:hover a span.arrow, .needhead span.link-more:hover a span.main-link
+.needheader span.link-more:hover a span.arrow, .needheader span.link-more:hover a span.main-link
 {
 	background: rgba(0,0,0,0.9);
 	box-sizing: border-box;
 	moz-box-sizing: border-box;
 }
-.needhead span.link-more:hover a span.main-link
+.needheader span.link-more:hover a span.main-link
 {
 	box-sizing: border-box;
 	moz-box-sizing: border-box;
@@ -475,7 +475,7 @@ p.caption-descr a
 {
 	border-left: 4px solid #004E64;
 }
-.needhead .da-slide p
+.needheader .da-slide p
 {
 	border-left: 4px solid #004E64;
 }
@@ -2408,7 +2408,7 @@ ul.sitemap li > ul > li
 	margin-left: 40px;
 	margin-top: 20px;
 }
-.needhead h1.error-title
+.needheader h1.error-title
 {
 	font-size: 700%;
 	font-weight: 700;
@@ -2673,11 +2673,11 @@ body > .navbar-fixed-top .brand {
 	{
 		position: absolute;
 	}
-	.needhead h1
+	.needheader h1
 	{
 		font-size: 2em;
 	}
-	.needhead p.medium
+	.needheader p.medium
 	{
 		font-size: 90%;
 	}
@@ -2693,7 +2693,7 @@ body > .navbar-fixed-top .brand {
 	{
 		height: 300px;
 	}
-	.needhead
+	.needheader
 	{
 		height: 500px;
 	}
@@ -2733,10 +2733,10 @@ body {
 	padding-top: 0;
 }
 
-.needhead h1 {
+.needheader h1 {
 	font-size: 3em;
 }
-.needhead p,  .needhead .btn {
+.needheader p,  .needheader .btn {
 	font-size: 18px;
 }
 .nav-collapse, .nav-collapse.collapse {
@@ -2759,7 +2759,7 @@ padding-right:0px;
 		padding: 0px 10px 8px 10px;
 		position: relative;
 	}
-	.needhead h1.error-title
+	.needheader h1.error-title
 	{
 		font-size: 300%;
 		font-weight: 700;
@@ -2781,11 +2781,11 @@ padding-right:0px;
 	{
 		padding-right: 55px;
 	}
-	.needhead h1
+	.needheader h1
 	{
 		font-size: 2em;
 	}
-	.needhead p.medium
+	.needheader p.medium
 	{
 		font-size: 90%;
 	}
@@ -2793,7 +2793,7 @@ padding-right:0px;
 	{
 		height: 300px;
 	}
-	.needhead
+	.needheader
 	{
 		height: 500px; margin-top: 80px;
 	}
@@ -2973,17 +2973,17 @@ margin-left: 5%;
 body {
 	padding-top: 0;
 }
-/* Widen needhead and social buttons to fill body padding */
+/* Widen needheader and social buttons to fill body padding */
 .headertop {
 
 	/*margin-top: -20px;*/ /* Offset bottom margin on .navbar */
 	margin-right: -20px;
 	margin-left: -20px;
 }
-.needhead h1 {
+.needheader h1 {
 	font-size: 2.5em;
 }
-.needhead p,  .needhead .btn {
+.needheader p,  .needheader .btn {
 	font-size: 16px;
 }
 .marketing .span4 {
@@ -3019,13 +3019,13 @@ h2 small {
 	display: block;
 	margin: 0 auto;
 }
-.needhead h1 {
+.needheader h1 {
 	font-size: 2em;
 }
-.needhead p,  .needhead .btn {
+.needheader p,  .needheader .btn {
 	font-size: 14px;
 }
-/* center align subhead text like the needhead */
+/* center align subhead text like the needheader */
 .subhead h1,  .subhead p {
 	text-align: center;
 }

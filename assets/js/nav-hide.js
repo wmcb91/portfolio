@@ -1,9 +1,8 @@
 $(document).ready(function(){
-
-  if (document.body.clientWidth > 480) {
+  if (document.body.clientWidth > 580) {
     $(function () {
       $(window).scroll(function () {
-        if ($(this).scrollTop() > (window.innerHeight * 0.4)) {
+        if ($(window).scrollTop() > (window.innerHeight * 0.4)) {
           $('.nav-reaction').fadeIn();
           $('.over-image-title').fadeOut(850);
         } else {
@@ -20,7 +19,7 @@ $(document).ready(function(){
         document.body.clientWidth === 568
         ) {
     $('.tip-info').show();
-  } if (document.body.clientWidth <= 480) {
+  } if (document.body.clientWidth <= 580) {
     $('.nav-reaction').show();
     $('.tip-info').show();
   }

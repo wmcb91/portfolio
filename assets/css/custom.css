@@ -1,10 +1,11 @@
 /*My custom CSS*/
 
 body {
-  font-family: 'Hind Siliguri';
+  font-family: 'Montserrat', "Raleway", Helvetica, Arial, sans-serif;
   cursor: auto;
   color: #4f4f4f;
   text-align: center;
+  min-width: 315px;
 }
 
 em {
@@ -18,12 +19,12 @@ hr.half {
 
 section {
   padding-bottom: 0;
-  padding-top: 80px;
+  padding-top: 0;
   overflow-x: hidden;
 }
 
-h2 {
-  font-weight: 200;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
 }
 
 .navbar-inner {
@@ -37,12 +38,10 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .loaded {
     opacity: 1;
     transition: 7s;
   }
-
   .snow {
     background-image: url(../../assets/img/snow_flakes_1.png), url(../../assets/img/snow_flakes_2.png), url(../../assets/img/snow_flakes_3.png);
   	height: 100%;
@@ -105,7 +104,7 @@ h2 {
   }
 }
 @media (max-width: 767px) {
-  .needhead {
+  .needheader {
     margin-top: 0px;
   }
   .large-text {
@@ -119,8 +118,20 @@ h2 {
   }
 }
 @media (max-width: 480px) {
-  .needhead {
-    margin-top: 80px;
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+  .needheader {
+    height: 350px;
+  }
+  .nav-reaction {
+    position: absolute;
+  }
+  .navbar-static-top {
+    position: absolute;
+  }
+  .navbar-inner {
+    padding-left: 25px;
   }
   section {
     padding-bottom: 0;
@@ -130,7 +141,7 @@ h2 {
     margin: 20px 0;
   }
   .large-text {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
   .standart-h2title {
     padding: 0 15px;
@@ -145,38 +156,6 @@ h2 {
 /* ------------------------------- */
 
 
-
-/* ------------------------------- */
-/* --- START LOADING ICON ---*/
-/*.no-js #loader {
-  display: none;
-}
-.js #loader {
-  display: block;
-  position: absolute;
-  left: 100px;
-  top: 0;
-}
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
-}
-.spinnger {
-  color: #000;
-  position: absolute;
-  top: 400px;
-  z-index: 800;
-}*/
-/* --- END LOADING ICON ---*/
-/* ------------------------------- */
-
-
-
 /* ------------------------------- */
 /* --- START LOGO AND TITLE ---*/
 .logo {
@@ -185,36 +164,34 @@ h2 {
   height: 70px;
   margin: 6px 15px 4px 0;
   user-select: none;
-  /*pointer-events: none;*/
 }
-
 .logo-div {
   margin-left: 5px;
 }
-
 .brand {
   user-select: none;
-  /*pointer-events: none;*/
   padding: 0;
 }
-
 .sub-title {
   color: #90AD99;
 }
-
 .nav-collapse {
   font-size: 17px;
 }
-
+.navbar .brand span {
+  font-weight: 500;
+}
 #nav > li.sfHover > a {
   color: #004E64;
   background-color: #FAFAFA;
 }
-
 #nav > li.active > a,
 #nav > li > a:hover {
   color: #fff;
   background-color: #004E64;
+}
+.navbar .nav > li > a:focus {
+  color: #fff;
 }
 
 /* --- START MOBILE DEVICE ---*/
@@ -226,6 +203,24 @@ h2 {
   #nav > li.active > a {
     color: #fff;
     background-color: #004E64;
+  }
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .navbar-inner {
+    padding: 0;
+  }
+  .logo {
+    height: 60px;
+    margin-top: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 825px) {
+  .navbar .nav > li > a {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+  .navbar .brand {
+    margin-left: -14px;
   }
 }
 @media (max-width: 767px) {
@@ -253,11 +248,16 @@ h2 {
   }
 }
 @media (max-width: 370px) {
+  #brand {
+    padding-right: 0;
+  }
   .navbar .brand span {
     font-size: 1.8em;
+    min-width: 260px
   }
   .navbar .brand span small {
-    font-size: 12px;
+    font-size: 14px;
+    letter-spacing: -0.01em;
   }
   .logo {
     height: 50px;
@@ -274,18 +274,29 @@ h2 {
 
 /* ------------------------------- */
 /* --- START HEADER IMAGE AND SLIDER ---*/
-/*.over-image-title {
-  position: relative;
-  text-align: center;
-  top: 38vh ;
-}*/
+.fa-snowflake-o {
+  bottom: calc(2vh + 15px);
+  left: 10px;
+  position: absolute;
+  z-index: 10000;
+  transition: 2s;
+}
+
+.fa-snowflake-o.active {
+  color: #177367;
+  transition: 2s;
+  transition: .1s;
+}
+
+.fa-snowflake-o:hover,
+.fa-snowflake-o.active:hover {
+  color: #389e90;
+  transition: .1s;
+}
 
 .over-image-title {
-  /*bottom: 40vh;*/
   bottom: 2vh;
   right: 20%;
-  /*background-color: rgb(155,155,155);
-  background-color: rgba(155,155,155,.7);*/
   color: #177367;
   opacity: .95;
   padding: 25px 10px 5px;
@@ -295,14 +306,11 @@ h2 {
 
 .name-header,
 .dev-header {
-  font-family: 'Hind Siliguri';
+  font-size: 7em;
+  font-weight: 300;
+  pointer-events: none;
   text-transform: uppercase;
   user-select: none;
-  pointer-events: none;
-}
-
-.name-header {
-  font-size: 7em;
 }
 
 .dev-header {
@@ -330,8 +338,12 @@ h2 {
   }
 }
 @media (min-width: 768px) and (max-width: 980px) {
+  .fa-snowflake-o {
+    bottom: 15px;
+  }
   .over-image-title {
     bottom: 0;
+    right: 10%;
   }
   .name-header {
     font-size: 5em;
@@ -342,13 +354,16 @@ h2 {
   }
 }
 @media (max-width: 767px) {
+  .fa-snowflake-o {
+    bottom: 15px;
+  }
   .over-image-title {
-    /*top: 200px;*/
     bottom: 0;
-    right: 12%;
+    right: 5%;
+    margin: auto;
   }
   .name-header {
-    font-size: 5em;
+    font-size: 4.5em;
   }
   .dev-header {
     font-size: 2em;
@@ -359,28 +374,23 @@ h2 {
     left: 25px;
   }
 }
-@media (max-width: 480px) {
-  .action-banner-bg,
+@media (max-width: 580px) {
+  .action-banner-bg {
+    background: url(../../assets/img/ski_photo_sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .fa-snowflake-o {
+    display: none;
+  }
   .over-image-title,
-  .name-header,
-  .dev-header,
-  .photo-cred,
   .snow {
     display: none;
     background-image: none;
   }
-  .container {
-    margin-top: -270px;
-  }
-  .bio-img {
-    position: absolute;
-    top: 100px;
-  }
 }
 @media (max-width: 480px) {
-  .container {
-    margin-top: -285px;
-  }
 }
 /* --- END MOBILE DEVICE ---*/
 /* --- END HEADER IMAGE AND SLIDER ---*/
@@ -392,7 +402,6 @@ h2 {
 /* ------ START ABOUT ME SECTION ------*/
 .my-story {
   text-align: left;
-  padding-left: 8.5470%;
 }
 
 .my-story p {
@@ -401,13 +410,9 @@ h2 {
 }
 
 .my-story h3 {
-  font-size: 2.9em;
+  font-size: 2em;
 }
 
-.my-photo {
-  border-radius: 170px;
-  height: 280px;
-}
 
 /* --- START MOBILE DEVICE FORMATTING --- */
 @media (max-width: 1200px) {
@@ -420,9 +425,6 @@ h2 {
   }
   .my-story h3 {
     font-size: 2.3em;
-  }
-  .my-photo {
-    height: 270px;
   }
 }
 @media (min-width: 768px) and (max-width: 980px) {
@@ -438,14 +440,8 @@ h2 {
     font-size: 2.1em;
     margin: 0;
   }
-  .my-photo {
-    height: 228px;
-  }
 }
 @media (max-width: 767px) {
-  #bio-section {
-    padding-top: 0;
-  }
   .my-story {
     padding: 0 11%;
   }
@@ -457,22 +453,13 @@ h2 {
     font-size: 1.56em;
     margin: 0;
   }
-  .my-photo {
-    height: 228px;
-  }
-  .bio-img {
-    margin-top: 40px;
-  }
 }
 @media (max-width: 480px) {
-  #bio-section {
-    padding: 0;
-  }
   .my-story {
     padding: 0 6%;
   }
   .my-story p {
-    font-size: 1.27em;
+    font-size: 1.1em;
     line-height: 1.49em;
   }
   .my-story h3 {
@@ -480,31 +467,15 @@ h2 {
     line-height: 1.0em;
     margin: 0 0 10px;
   }
-  .my-photo {
-    height: 250px;
-  }
-  .bio-img {
-    margin-top: 0;
-  }
 }
 @media (max-width: 370px) {
-  #bio-section {
-    padding: 0;
-  }
   .my-story {
     padding: 0 20px;
   }
-  .my-story p {
-    font-size: 1.3em;
-    line-height: 1.49em;
-  }
   .my-story h3 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     line-height: 1.0em;
     margin: 0 0 10px;
-  }
-  .my-photo {
-    height: 230px;
   }
 }
 /* --- END MOBILE DEVICE ---*/
@@ -515,15 +486,13 @@ h2 {
 
 /* ------------------------------- */
 /* --- START SKILLS SECTION ---*/
-/*p.features {
-  font-size: 1.15em;
-}*/
-
+.about-me-span {
+  padding-bottom: 20px
+}
 p.features,
 p.features:hover {
   border-bottom: none;
   color: #4f4f4f;
-  font-family: 'Hind Siliguri';
   font-size: 1.15em;
   padding: 0 10px;
   -webkit-transition: none;
@@ -535,26 +504,20 @@ p.features:hover {
   margin-left: 0;
   margin-right: 2.064102564102564%;
 }
-
 .devicon {
   display: block;
   padding: 20px;
   position: relative;
-  transition: 0.6s;
+  transition: 0.3s;
   user-select: none;
-
-/* --- CHANGE THIS WHEN HOVERING WILL MEAN SOMETHING ---*/
-  /*pointer-events: none;*/
 }
-
 .devicon:hover {
-  padding: 15px;
+  padding: 18px;
 }
-
 .devicon > img {
   float: left;
+  -webkit-user-drag: none;
 }
-
 .devicon-center {
   position: absolute;
   top: 50%;
@@ -562,7 +525,6 @@ p.features:hover {
   transform: translate(-50%, -50%);
   font-size: 18px;
 }
-
 .dev {
   height: 90%;
   position: absolute;
@@ -570,7 +532,6 @@ p.features:hover {
   width: 90%;
   z-index: -1;
 }
-
 .devicon-row {
   margin-bottom: 25px;
 }
@@ -623,10 +584,10 @@ p.features:hover {
     margin: 0;
   }
   h3.features-title {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   p.features {
-    font-size: 1.27em;
+    font-size: 1.1em;
     line-height: 1.49em;
     padding: 0 20px;
   }
@@ -635,10 +596,6 @@ p.features:hover {
   .span2.devicon {
     width: 31.5%;
     margin: 0;
-  }
-  p.features {
-    font-size: 1.3em;
-    line-height: 1.49em;
   }
 }
 /* --- END MOBILE DEVICE ---*/
@@ -832,10 +789,11 @@ p.features:hover {
     line-height: 4.5vw;
   }
   .thumbnail .caption {
+    padding: 3px 9px 13px;
     height: 84px;
   }
   .transit-to-top {
-    height: 85px;
+    height: 90px;
   }
   .standart-h3title {
     margin-bottom: 30px;
@@ -878,7 +836,6 @@ p.features:hover {
 /* --- START CONTACT SECTION ---*/
 section#contact-section {
   padding-bottom: 0;
-  padding-top: 80px;
   text-align: center;
   overflow: hidden;
 }
@@ -896,7 +853,7 @@ section#contact-section {
   pointer-events: none;
 }
 
-.contact-icons-div.span4 {
+.contact-icons-div.span5 {
   float: none;
   display: inline-block;
   margin: 35px auto 0;
@@ -932,7 +889,7 @@ section#contact-section {
   }
 }
 @media (max-width: 767px) {
-  .contact-icons-div.span4 {
+  .contact-icons-div.span5 {
     width: 44%;
   }
   .contact-icon {
@@ -944,8 +901,8 @@ section#contact-section {
   }
 }
 @media (max-width: 480px) {
-  .contact-icons-div.span4 {
-    width: 56%;
+  .contact-icons-div.span5 {
+    width: 70%;
   }
   .contact-icon {
     font-size: 1.1em;
@@ -956,8 +913,8 @@ section#contact-section {
   }
 }
 @media (max-width: 370px) {
-  .contact-icons-div.span4 {
-    width: 65%;
+  .contact-icons-div.span5 {
+    width: 85%;
   }
   .contact-icon {
     font-size: 1.1em;
