@@ -1,9 +1,8 @@
 /*My custom CSS*/
-
 body {
   font-family: 'Montserrat', "Raleway", Helvetica, Arial, sans-serif;
   cursor: auto;
-  color: #4f4f4f;
+  color: #3f3f3f;
   text-align: center;
   min-width: 315px;
 }
@@ -17,6 +16,10 @@ hr.half {
   margin: 20px 0;
 }
 
+#bio-section hr.half:first-child {
+  margin-top: 40px;
+}
+
 section {
   padding-bottom: 0;
   padding-top: 0;
@@ -27,6 +30,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.first-word {
+  /*color: #177367;*/
+}
 .navbar-inner {
   padding-right: 0;
 }
@@ -49,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   	position: absolute;
   	top: 0;
   	width: 100%;
+    will-change: transform;
   	z-index:100;
   	-webkit-animation: snow 10s linear infinite;
   	-moz-animation: snow 10s linear infinite;
@@ -60,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 8s;
   }
 }
-
+/* -- Credit to Nicky Christensen for snow effect codepen @NickyCDK */
 @keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
@@ -110,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   .large-text {
     font-size: 1.5em;
   }
-  .center.standart-h2title {
+  .center.standard-h2title {
     margin-bottom: 0;
   }
   hr.half {
@@ -143,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   .large-text {
     font-size: 1.3em;
   }
-  .standart-h2title {
+  .standard-h2title {
     padding: 0 15px;
   }
 }
@@ -489,10 +496,14 @@ h1, h2, h3, h4, h5, h6 {
 .about-me-span {
   padding-bottom: 20px
 }
+.about-me-span > .fa-database {
+  font-size: 3.6em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 p.features,
 p.features:hover {
   border-bottom: none;
-  color: #4f4f4f;
   font-size: 1.15em;
   padding: 0 10px;
   -webkit-transition: none;
@@ -648,7 +659,7 @@ p.features:hover {
   float: none;
 }
 
-.p-title.standart-h3title {
+.p-title.standard-h3title {
   margin-top: 23px;
   font-size: 1.5em;
 }
@@ -661,7 +672,7 @@ p.features:hover {
   height: 85px;
 }
 
-.standart-h3title {
+.standard-h3title {
   margin-bottom: 30px;
 }
 
@@ -675,7 +686,7 @@ p.features:hover {
   .project-2 {
     height: 270px;
   }
-  .p-title.standart-h3title {
+  .p-title.standard-h3title {
     margin-top: 23px;
     font-size: 1.3em;
   }
@@ -695,7 +706,7 @@ p.features:hover {
   .transit-to-top {
     height: 85px;
   }
-  .standart-h3title {
+  .standard-h3title {
     margin-bottom: 30px;
   }
   .thumbnail:hover h4,
@@ -711,7 +722,7 @@ p.features:hover {
     padding: 3px 9px;
     height: 90px;
   }
-  .p-title.standart-h3title {
+  .p-title.standard-h3title {
     margin-top: 23px;
     font-size: 1.2em;
   }
@@ -730,7 +741,7 @@ p.features:hover {
   .transit-to-top {
     height: 90px;
   }
-  .standart-h3title {
+  .standard-h3title {
     margin-bottom: 30px;
   }
   .thumbnail:hover h4,
@@ -775,7 +786,7 @@ p.features:hover {
     border-top: 3px solid #004E64;
     height: 60vw;
   }
-  .p-title.standart-h3title {
+  .p-title.standard-h3title {
     margin-top: 23px;
     font-size: 1.5em;
   }
@@ -795,7 +806,7 @@ p.features:hover {
   .transit-to-top {
     height: 90px;
   }
-  .standart-h3title {
+  .standard-h3title {
     margin-bottom: 30px;
   }
   .thumbnail:hover h4,
@@ -807,7 +818,7 @@ p.features:hover {
   .project-2 {
     height: 56vw;
   }
-  .p-title.standart-h3title {
+  .p-title.standard-h3title {
     margin-top: 23px;
     font-size: 1.3em;
   }

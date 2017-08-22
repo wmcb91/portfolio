@@ -2325,18 +2325,18 @@ h3.features-title
 	font-size: 120%;
 	text-transform: uppercase;
 }
-.standart-h2title
+.standard-h2title
 {
 	font-size: 140%;
-	line-heigh: 24px;
+	line-height: 24px;
 	text-transform: uppercase;
 }
-.standart-h3title
+.standard-h3title
 {
 	font-size: 120%;
 	text-transform: uppercase;
 }
-.standart-h4title
+.standard-h4title
 {
 	font-size: 100%;
 	text-transform: uppercase;
@@ -2344,7 +2344,7 @@ h3.features-title
 
 
 /***************************** CUSTOM WORD COLORS *******************************************/
-.main-color, .firstword
+.main-color, .first-word
 {
 	color: #004E64;
 }
