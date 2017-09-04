@@ -16,8 +16,8 @@ hr.half {
   margin: 20px 0;
 }
 
-#bio-section hr.half:first-child {
-  margin-top: 40px;
+section .half:first-child {
+  margin-top: 90px;
 }
 
 section {
@@ -501,12 +501,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-p.features,
-p.features:hover {
-  border-bottom: none;
-  font-size: 1.15em;
-  padding: 0 10px;
+.about-me-span p {
+  /*border-bottom: none;*/
+  /*font-size: 1.15em;*/
+  /*padding: 0 10px;*/
   -webkit-transition: none;
+  transition: none;
   user-select: none;
   text-align: left;
 }
@@ -555,7 +555,7 @@ p.features:hover {
     width: 16.2%;
     margin: 0;
   }
-  p.features {
+  .about-me-span p  {
     padding: 0 5px;
     font-size: 1.1em;
   }
@@ -567,7 +567,7 @@ p.features:hover {
     width: 19.8%;
     margin: 0;
   }
-  p.features {
+  .about-me-span p  {
     font-size: 1.02em;
     padding: 0;
   }
@@ -585,7 +585,7 @@ p.features:hover {
   .devicon-row {
     margin-bottom: 0;
   }
-  p.features {
+  .about-me-span p  {
     padding: 0 11% 15px;
   }
 }
@@ -597,7 +597,7 @@ p.features:hover {
   h3.features-title {
     font-size: 1.4em;
   }
-  p.features {
+  .about-me-span p  {
     font-size: 1.1em;
     line-height: 1.49em;
     padding: 0 20px;
@@ -845,11 +845,6 @@ p.features:hover {
 
 /* ------------------------------- */
 /* --- START CONTACT SECTION ---*/
-section#contact-section {
-  padding-bottom: 0;
-  text-align: center;
-  overflow: hidden;
-}
 
 .contact-text {
   font-size: 1.6em;
