@@ -16,9 +16,6 @@ hr.half {
   margin: 20px 0;
 }
 
-section .half:first-child {
-  margin-top: 90px;
-}
 
 section {
   padding-bottom: 0;
@@ -38,6 +35,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 480px) {
+  section .half:first-child {
+    margin-top: 90px;
+  }
   .action-banner-bg {
     opacity: .3;
     background: url(../../assets/img/ski_photo_lg-min.jpg) top center;
