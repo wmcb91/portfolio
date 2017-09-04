@@ -26,11 +26,14 @@ $(document).ready(function(){
 
   // Prevent clicking invisible buttons on mobile
   function enableProjectButtons() {
-    $(this).off('mouseover');
+    $(this).off('mouseover', enableProjectButtons);
     setTimeout(function(){
       $(this).find('.proj-btn').css('pointer-events', 'auto');
     }.bind(this), 0);
   }
 
+  function oddBugFix(){}
+
   $('.project-item-overlay').on('mouseover', enableProjectButtons);
+  $('.thumbnail').on('mouseover', oddBugFix);
 });
