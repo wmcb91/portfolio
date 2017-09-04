@@ -23,4 +23,14 @@ $(document).ready(function(){
     $('.nav-reaction').show();
     $('.tip-info').show();
   }
+
+  // Prevent clicking invisible buttons on mobile
+  function enableProjectButtons() {
+    $(this).off('mouseover');
+    setTimeout(function(){
+      $(this).find('.proj-btn').css('pointer-events', 'auto');
+    }.bind(this), 0);
+  }
+
+  $('.project-item-overlay').on('mouseover', enableProjectButtons);
 });
