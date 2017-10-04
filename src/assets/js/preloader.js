@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	function toggleFlurries(){
 		$(this).toggleClass('active');
@@ -16,10 +15,13 @@ $(document).ready(function(){
 	}
 
 	endFlurries();
-	$('#nav').localScroll();
-	$('#nav').on('click', function() {
+	$('#nav a').localScroll();
+	$('#nav a').on('click', function() {
+		if ($(this).attr('href').includes('resume')) { return; }
 		$('body').clearQueue();
 		$(event.target).blur();
+		var sectionTop = $(this.hash).position().top;
+		$('html, body').animate({scrollTop:sectionTop}, 500, 'linear');
 	});
 
 	window.addEventListener("wheel", function(){$('body').stop();},{passive:true});

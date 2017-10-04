@@ -16,7 +16,6 @@ hr.half {
   margin: 20px 0;
 }
 
-
 section {
   padding-bottom: 0;
   padding-top: 0;
@@ -303,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .over-image-title {
   bottom: 2vh;
-  right: 20%;
+  right: 15%;
   color: #177367;
   opacity: .95;
   padding: 25px 10px 5px;
@@ -524,6 +523,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .devicon:hover {
   padding: 18px;
+}
+.devicon.vue {
+  padding: 24px;
+}
+.devicon.vue:hover {
+  padding: 22px;
 }
 .devicon > img {
   float: left;
