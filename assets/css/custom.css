@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 0;
 }
 
+.navbar-static-top .navbar-inner {
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
 @media (min-width: 480px) {
   section .half:first-child {
     margin-top: 90px;
