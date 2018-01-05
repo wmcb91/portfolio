@@ -5,6 +5,7 @@ body {
   color: #3f3f3f;
   text-align: center;
   min-width: 315px;
+  -webkit-font-smoothing: antialiased;
 }
 
 em {
