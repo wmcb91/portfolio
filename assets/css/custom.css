@@ -705,12 +705,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.13em;
     line-height: 1.3em;
   }
-  .thumbnail .caption > .transit-to-top > .caption-descr.ghcp-descr {
-    line-height: 1.1em;
-  }
-  .thumbnail:hover .ghcp-title {
-    margin-top: -71px;
-  }
   .thumbnail .caption {
     height: 84px;
   }
@@ -743,12 +737,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     padding: 0;
   }
-  .thumbnail .caption > .transit-to-top > .caption-descr.ghcp-descr {
-    line-height: 1.2em;
-  }
-  .thumbnail:hover .ghcp-title {
-    margin-top: -65px;
-  }
   .transit-to-top {
     height: 90px;
   }
@@ -767,17 +755,11 @@ h1, h2, h3, h4, h5, h6 {
   .project-2 {
     height: 50vw;
   }
-  .thumbnail:hover .ghcp-title {
-    margin-top: -65px;
-  }
   .thumbnail .caption .caption-descr {
     font-size: 1.13em;
     line-height: 1.2em;
     text-align: left;
     padding: 0;
-  }
-  .thumbnail .caption > .transit-to-top > .caption-descr.ghcp-descr {
-    line-height: 1.2em;
   }
 }
 @media (max-width: 568px) {
@@ -806,9 +788,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 4.5vw;
     text-align: left;
     padding: 0;
-  }
-  .thumbnail .caption > .transit-to-top > .caption-descr.ghcp-descr {
-    line-height: 4.5vw;
   }
   .thumbnail .caption {
     padding: 10px;
@@ -841,11 +820,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .project-item-overlay .inner {
     top: 15%;
-  }
-}
-@media (max-width: 314px) {
-  .thumbnail:hover .ghcp-title {
-    margin-top: -71px;
   }
 }
 /* --- END MOBILE DEVICE ---*/
