@@ -811,7 +811,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 4.5vw;
   }
   .thumbnail .caption {
-    padding: 3px 9px 13px;
+    padding: 10px;
     height: 84px;
   }
   .transit-to-top {
