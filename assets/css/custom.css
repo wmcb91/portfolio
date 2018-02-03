@@ -201,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 #nav > li > a:hover {
   color: #fff;
   background-color: #004E64;
+  box-shadow: 0px 3px 1px 0px rgba(0,0,0,.4);
 }
 .navbar .nav > li > a:focus {
   color: #fff;
