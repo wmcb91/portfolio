@@ -5,7 +5,9 @@ body {
   color: #3f3f3f;
   text-align: center;
   min-width: 315px;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 em {
@@ -858,10 +860,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 32.3%;
 }
 
-.github-contact {
+.contact-icon .fa:hover {
+  color: #1178B3;
+}
+
+.contact-icon .github-contact {
   color: #303030;
 }
-.github-contact:hover {
+
+.contact-icon .github-contact:hover {
   color: #5f5f5f;
 }
 
