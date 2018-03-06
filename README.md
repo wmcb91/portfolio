@@ -1,6 +1,6 @@
 # Will McBride
 
-Boston-based full stack web developer
+Denver based full stack web developer
 
 My Portfolio: [wmcbride.com](http://wmcbride.com)
 
