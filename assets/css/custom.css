@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 90px;
   }
   .action-banner-bg {
-    opacity: .3;
+    opacity: .1;
     background: url(../../assets/img/ski_photo_lg-min.jpg) top center;
     background-repeat: no-repeat;
     background-size: cover;
