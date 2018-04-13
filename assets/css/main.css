@@ -207,7 +207,7 @@ hr, img {
     height: 14px;
     line-height: 14px;
     vertical-align: text-top;
-    background-image: url(http://wmcbride.com/assets/img/glyphicons-halflings.png);
+    background-image: url(../img/glyphicons-halflings.png);
     background-position: 14px 14px;
     background-repeat: no-repeat;
     margin-top: 1px
@@ -843,7 +843,7 @@ hr, img {
   .footer {
     margin-top: 70px;
     border-top: 1px solid #e5e5e5;
-    background: url(http://wmcbride.com/assets/img/bgfooter.png) #222;
+    background: url(../img/bgfooter.png) #222;
     padding: 30px 0 0;
     color: #919191
   }
@@ -1039,7 +1039,7 @@ hr, img {
     }
     .action-banner-bg {
       opacity: .1;
-      background: url(http://wmcbride.com/assets/img/ski_photo_lg-min.jpg) top center no-repeat;
+      background: url(../img/ski_photo_lg-min.jpg) top center no-repeat;
       background-size: cover
     }
     .loaded {
@@ -1047,7 +1047,7 @@ hr, img {
       transition: 7s
     }
     .snow {
-      background-image: url(http://wmcbride.com/assets/img/snow_flakes_1.png), url(http://wmcbride.com/assets/img/snow_flakes_2.png), url(http://wmcbride.com/assets/img/snow_flakes_3.png);
+      background-image: url(../img/snow_flakes_1.png), url(../img/snow_flakes_2.png), url(../img/snow_flakes_3.png);
       height: 100%;
       left: 0;
       position: absolute;
@@ -1327,7 +1327,7 @@ hr, img {
   
   @media (max-width:580px) {
     .action-banner-bg {
-      background: url(http://wmcbride.com/assets/img/ski_photo_sm.jpg) center no-repeat;
+      background: url(../img/ski_photo_sm.jpg) center no-repeat;
       background-size: cover
     }
     .fa-snowflake-o {
@@ -1793,8 +1793,8 @@ hr, img {
   
   @font-face {
     font-family: FontAwesome;
-    src: url(http://wmcbride.com/assets/font/fontawesome-webfont.eot?v=4.7.0);
-    src: url(http://wmcbride.com/assets/font/fontawesome-webfont.eot#iefix&v=4.7.0) format('embedded-opentype'), url(http://wmcbride.com/assets/font/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(http://wmcbride.com/assets/font/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(http://wmcbride.com/assets/font/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(http://wmcbride.com/assets/font/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+    src: url(../font/fontawesome-webfont.eot?v=4.7.0);
+    src: url(../font/fontawesome-webfont.eot#iefix&v=4.7.0) format('embedded-opentype'), url(../font/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(../font/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(../font/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(../font/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
     font-weight: 400;
     font-style: normal
   }
