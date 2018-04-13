@@ -1041,6 +1041,7 @@ hr, img {
       opacity: .1;
       background: url(../img/ski_photo_lg-min.jpg) top center no-repeat;
       background-size: cover;
+      filter: contrast(107%);
     }
     .loaded {
       opacity: 1;
