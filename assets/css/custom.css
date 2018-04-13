@@ -665,8 +665,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .thumbnail .caption .caption-descr #nel {
-  color: #0099ee;
+  color: #66c8ff;
   float: none;
+  text-decoration: underline;
 }
 
 .p-title.standard-h3title {
