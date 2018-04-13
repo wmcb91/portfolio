@@ -1040,9 +1040,11 @@ hr, img {
     .action-banner-bg {
       opacity: .1;
       background: url(../img/ski_photo_lg-min.jpg) top center no-repeat;
-      background-size: cover
+      background-size: cover;
+      filter: blur(1px);
     }
     .loaded {
+      filter: blur(0px);
       opacity: 1;
       transition: 7s
     }
