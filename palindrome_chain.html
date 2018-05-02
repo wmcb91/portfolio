@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Palindrome Chain Length</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Will McBride Portfolio">
+    <meta name="author" content="Will McBride">
+    <link rel="stylesheet" href="assets/css/code-editor.css">
+    <link rel="shortcut icon" href="assets/img/circle-logo.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/img/circle-logo.png">
+  </head>
+  <body>
+    <div class="code-editor">
+    <code id="code">
+      <!-- Description -->
+      <p>
+        <a class="comment">
+          \*<br>
+          CHALLENGE INSTRUCTIONS (Original)
+          Number is a palindrome if it is equal to the number with digits in reversed order.<br>
+          For example, 5, 44, 171, 4884 are palindromes and 43, 194, 4773 are not palindromes.
+          <br><br>
+          Write a method palindrome_chain_length which takes a positive number and returns<br>
+          the number of special steps needed to obtain a palindrome. The special step is:<br>
+          "reverse the digits, and add to the original number". If the resulting number is<br>
+          not a palindrome, repeat the procedure with the sum until the resulting number is a palindrome.
+          <br><br>
+          If the input number is already a palindrome, the number of steps is 0.
+          <br><br>
+          Input will always be a positive integer.
+          <br><br>
+          For example, start with 87:
+          <br>
+          87 + 78 = 165; 165 + 561 = 726; 726 + 627 = 1353; 1353 + 3531 = 4884
+          <br>
+          4884 is a palindrome and we needed 4 steps to obtain it, so palindrome_chain_length(87) == 4
+          <br>
+          */
+        </a>
+      </p>
+      <!-- function1  -->
+      <p>
+        <a class="statement">const</a>
+        <a class="func">reverse</a>
+        <a class="op">=</a>
+        (n)
+        <a class="op">=></a>
+        {
+      </p>
+      <p>&nbsp;
+        <a class="statement">let</a>
+        r
+        <a class="op">=</a>
+        [];
+        <a id="r-val" class="comment">\\ r = []</a>
+      </p>
+      <p>&nbsp;
+        n
+        <a class="op">=</a>
+        <a class="obj">n</a>.<a class="meth">toString</a>().<a class="meth">split</a>('');
+        <a id="rev-n-val" class="comment">\\ n = undefined</a>
+      </p>
+      <p>&nbsp;
+        <a class="statement">for</a>
+        (<a class="statement">let</a> i 
+        <a class="op">=</a>
+        <a class="obj">n</a>.<a class="obj">length</a>;
+        i
+        <a class="op">></a>
+        <a class="num">0</a>;
+        i<a class="op">--</a>)
+        {
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        <a class="obj">r</a>.<a class="meth">push</a>(<a class="obj">n</a>.<a class="meth">pop</a>());
+      </p>
+     
+      <p>&nbsp;
+        }
+      </p>
+      <p>&nbsp;
+        <a class="statement">return</a>
+        <span class="res">Number</span>(<a class="obj">r</a>.<a class="meth">join</a>(<a class="str">''</a>)) ;
+        <a id="rev-return-val" class="comment">\\ return undefined</a>
+      </p>
+      <p>
+        };
+      </p>
+      <br>
+
+      <!-- function2  -->
+      <p>
+        <a class="statement">const</a>
+        <a class="func">palindromeChainLength</a>
+        <a class="op">=</a>
+        (n)
+        <a class="op">=></a>
+        {
+      </p>
+      <p>&nbsp;
+        <a class="statement">let</a>
+        sum
+        <a class="op">=</a>
+        <a class="num">0</a>;
+        <a id="r-val" class="comment">\\ sum = 0</a>
+      </p>
+      <p>&nbsp;
+        <a class="statement">while</a>
+        (<a class="bool">true</a>)
+        {
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        <a class="statement">if</a>
+        (n
+        <a class="op">===</a>
+        <a class="func">reverse</a>(n))
+        {
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="statement">return</a>
+        sum;
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        }
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        n
+        <a class="op">=</a>
+        n
+        <a class="op">+</a>
+        <a class="func">reverse</a>(n));
+        <a id="main-n-val" class="comment">\\ n = undefined</a>
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        sum<a class="op">++</a>;
+      </p>
+      <p>&nbsp;
+        }
+      </p>
+      <p>
+        };
+      </p>
+      <br>
+      <p>
+        <a class="func">palindromeChainLength</a>(<a id="max-val" class="num">87</a>);
+      </p>
+
+      <div class="controls">
+        <div class="row">
+          <label>Input Number</label>
+          <label id="speed-label">Speed</label>
+        </div>
+        <div class="row">
+          <input id="test-num" type="number" value=100 min=0 max=1000 step=1>
+          <input id="speed" type="range" value=25>
+        </div>
+        <div id="run" class="btn">Run</div>
+        <div id="stop" class="btn">Stop</div>
+      </div>
+    </code>
+    </div>
+    <div class="console">
+      <h3>Console</h3> 
+      <code id="output"></code>
+    </div>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./fizzbuzz_1.html">fizzbuzz-1.js</a>
+      <a href="./fizzbuzz_2.html">fizzbuzz-2.js</a>
+      <a href="./palindrome_chain.html">palindrome_chain.js</a>
+    </nav>
+    <script type="text/javascript" src="assets/js/palindrome_chain.js"></script>    
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fizzbuzz 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Will McBride Portfolio">
+    <meta name="author" content="Will McBride">
+    <link rel="stylesheet" href="assets/css/code-editor.css">
+    <link rel="shortcut icon" href="assets/img/circle-logo.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/img/circle-logo.png">
+  </head>
+  <body>
+    <div class="code-editor">
+    <code id="code">
+      <p>
+        <a class="statement">const</a>
+        <a class="func">bitwiseFizzBuzz</a>
+        <a class="op">=</a>
+        (max)
+        <a class="op">=></a>
+        {
+      </p>
+      <p>&nbsp;
+        <a class="statement">const</a>
+        words
+        <a class="op">=</a>
+        [<a class="str">'Fizz'</a>,
+        <a class="str">'Buzz'</a>,
+        <a class="str">'FizzBuzz'</a>];
+      </p>
+      <p>&nbsp;
+        <a class="statement">let</a>
+        mask
+        <a class="op">=</a>
+        <a class="num">810092048</a>;
+        <a class="comment">// 11 00 00 01 00 10 01 00 00 01 10 00 01 00 00</a>
+      </p>
+      <p>&nbsp;
+        <a class="statement">let</a>
+        c
+        <a class="op">=</a>
+        <a class="num">0</a>;
+      </p>
+      <p>&nbsp;
+        <a class="statement">let</a>
+        output;
+      </p>
+      <p>&nbsp;
+        <a class="statement">for</a>
+        (<a class="statement">let</a> i 
+        <a class="op">=</a>
+        <a class="num">1</a>;
+        i
+        <a class="op"><=</a>
+        max;
+        i<a class="op">++</a>)
+        {
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        c
+        <a class="op">=</a>
+        mask
+        <a class="op">&</a>
+        <a class="num">3</a>;
+        <a id="c-val" class="comment">\\ c = 0</a>
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        mask 
+        <a class="op">=</a>
+        mask 
+        <a class="op">>></a>
+        <a class="num">2</a>
+        <a class="op">|</a>
+        c
+        <a class="op"><<</a>
+        <a class="num">28</a>;
+        <a id="mask-val" class="comment">\\ mask = 810092048</a>
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        output
+        <a class="op">=</a>
+        words[c - <a class="num">1</a>]
+        <a class="op">||</a>
+        i;
+        <a id="output-val" class="comment">\\ output = undefined</a>
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        <a class="res">console</a>.<a class="meth">log</a>(output);
+        <a class="comment"></a>
+      </p>
+      <p>&nbsp;
+        }
+      </p>
+      <p>
+        };
+      </p>
+      <br>
+      <p>
+        <a class="func">bitwiseFizzBuzz</a>(<a id="max-val" class="num">100</a>);
+      </p>
+
+      <div class="controls">
+        <div class="row">
+          <label>Max</label>
+          <label id="speed-label">Speed</label>
+        </div>
+        <div class="row">
+          <input id="max" type="number" value=100 min=0 max=1000 step=1>
+          <input id="speed" type="range" value=25>
+        </div>
+        <div id="run" class="btn">Run</div>
+        <div id="stop" class="btn">Stop</div>
+      </div>
+    </code>
+    </div>
+    <div class="console">
+      <h3>Console</h3> 
+      <code id="output"></code>
+    </div>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./fizzbuzz_1.html">fizzbuzz-1.js</a>
+      <a href="./fizzbuzz_2.html">fizzbuzz-2.js</a>
+      <a href="./palindrome_chain.html">palindrome_chain.js</a>
+    </nav>
+    <script type="text/javascript" src="assets/js/fizzbuzz_1.js"></script>    
+  </body>
+</html>

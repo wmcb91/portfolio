@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fizzbuzz 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Will McBride Portfolio">
+    <meta name="author" content="Will McBride">    
+    <link rel="stylesheet" href="assets/css/code-editor.css">
+    <link rel="shortcut icon" href="assets/img/circle-logo.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/img/circle-logo.png">
+  </head>
+  <body>
+    <code id="code" class="code-editor">
+      <p>
+        <a class="statement">const</a>
+        <a class="func">ternaryFizzBuzz</a>
+        <a class="op">=</a>
+        (max)
+        <a class="op">=></a>
+        {
+      </p>
+      <p>&nbsp;
+        <a class="statement">for</a>
+        (<a class="statement">let</a> i 
+        <a class="op">=</a>
+        <a class="num">0</a>;
+        i
+        <a class="op"><</a>
+        max;)
+        {
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        output
+        <a class="op">=</a>
+        (<a class="op">++</a>i
+        <a class="op">%</a>
+        <a class="num">3</a>
+        <a class="op">?</a>
+        <a class="str">''</a>
+        <a class="op">:</a>
+        <a class="str">'Fizz'</a>)
+        <a class="op">+</a>
+        (i
+        <a class="op">%</a>
+        <a class="num">5</a>
+        <a class="op">?</a>
+        <a class="str">''</a>
+        <a class="op">:</a>
+        <a class="str">'Buzz'</a>);
+        <a id="output-val" class="comment">\\ output = undefined</a>
+      </p>
+      <p class="loop-line">&nbsp;&nbsp;&nbsp;
+        <span class="res">console</span>.<span class="meth">log</span>(output);
+        <a class="comment"></a>
+      </p>
+      <p>&nbsp;
+        }
+      </p>
+      <p>
+        };
+      </p>
+      <br>
+      <p>
+        <a class="func">ternaryFizzBuzz</a>(<a id="max-val" class="num">100</a>);
+      </p>
+
+      <div class="controls">
+        <div class="row">
+          <label>Max</label>
+          <label id="speed-label">Speed</label>
+        </div>
+        <div class="row">
+          <input id="max" type="number" value=100 min=0 max=1000 step=1>
+          <input id="speed" type="range" value=25>
+        </div>
+        <div id="run" class="btn">Run</div>
+        <div id="stop" class="btn">Stop</div>
+      </div>
+    </code>
+    <div class="console">
+      <h3>Console</h3> 
+      <code id="output"></code>
+    </div>
+
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./fizzbuzz_1.html">fizzbuzz-1.js</a>
+      <a href="./fizzbuzz_2.html">fizzbuzz-2.js</a>
+      <a href="./palindrome_chain.html">palindrome_chain.js</a>
+    </nav>
+    <script type="text/javascript" src="assets/js/fizzbuzz_2.js"></script>    
+  </body>
+</html>
