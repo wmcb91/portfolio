@@ -1464,11 +1464,12 @@ h2, h3, h4 {
 
 .project-2 {
   box-sizing: border-box;
-  border: 3px solid #004E64;
+  border: 2px solid #004E64;
   border-bottom: 0;
   height: 310px
 }
 
+.project-item-overlay .fa-github,
 .fa-link {
   color: #fff
 }
