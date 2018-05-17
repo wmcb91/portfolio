@@ -172,6 +172,10 @@
     content: "\f1c9"
 }
 
+.fa-instagram:before {
+    content: "\f16d"
+}
+
 .fa-file-o:before {
     content: "\f016"
 }
