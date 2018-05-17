@@ -1739,6 +1739,16 @@ h2, h3, h4 {
   padding-bottom: 0
 }
 
+/* OVERRIDE CSS */
+.hidden {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+
 /*! CSS Used keyframes */
 
 @keyframes snow {
