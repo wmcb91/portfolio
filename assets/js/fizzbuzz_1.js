@@ -1,5 +1,5 @@
 const $ = (query) => {
-  if (query[0] === '#') {
+  if (query[0] === '#' && query.split(' ').length === 1) {
     return document.querySelector(query);
   }
   return document.querySelectorAll(query);
@@ -21,12 +21,12 @@ const bitwiseFizzBuzz = (max, lines, lineDelay) => {
   for (let i = 1; i <= max; i++) {
     let output, consoleOut, cValOut, maskValOut, outputOut;
     c = mask & 3;
-    cValOut = `\\\\ c = ${c}`;
+    cValOut = `// c = ${c}`;
     mask = mask >> 2 | c << 28;
-    maskValOut = `\\\\ mask = ${mask}`;
+    maskValOut = `// mask = ${mask}`;
 
     output = (words[c - 1] || i);
-    outputOut = `\\\\ output = ${output}`;
+    outputOut = `// output = ${output}`;
     if (typeof output === 'string') {
       consoleOut = `<p><a class="str">${output}</a></p>`;
     } else {
@@ -100,9 +100,9 @@ const stopAllTimeouts = () => {
 const runCodeAnimation = () => {
   stopAllTimeouts();
 
-  $('#c-val').innerHTML = '\\\\ c = 0';
-  $('#mask-val').innerHTML = '\\\\ mask = 810092048';    
-  $('#output-val').innerHTML = '\\\\ output = undefined';
+  $('#c-val').innerHTML = '// c = 0';
+  $('#mask-val').innerHTML = '// mask = 810092048';    
+  $('#output-val').innerHTML = '// output = undefined';
   $('#output').innerHTML = '';
   $('#max-val').innerHTML = app.max;
 
@@ -151,6 +151,8 @@ $('#speed').addEventListener('change', function() {
     newSpeed = 100;
   } else if (isNaN(newSpeed)) {
     newSpeed = 50;
+  } else if (newSpeed === 100) {
+    newSpeed = 300;
   }
 
   app.lineDelay = 1500 / newSpeed;

@@ -4,8 +4,10 @@ html {
   font-family: monospace;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
+  min-width: 960px;
   overflow: hidden;
 }
+
 
 body {
   margin: 0 8px;
@@ -140,16 +142,17 @@ p.active-line {
 }
 
 .console {
+  position: relative;
   width: 20%;
 }
 
 .console > h3 {
   position: fixed;
-  width: 100%;
+  width: calc(20% - 5px);
   background-color: #323232;
   height: 40px;
   top: -20px;
-  left: calc(80% - 15px);
+  right: -1px;
   padding-top: 20px;
   padding-left: 20px;
   border-bottom: 3px solid #232323;
@@ -160,6 +163,27 @@ p.active-line {
   display: inline-block;
 }
 
+.iterations {
+  bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  right: calc(20% + 25px);
+}
 
+
+@media (max-width: 960px) {
+  html {
+    overflow-x: scroll;
+  }
+
+  body {
+    min-width: 960px;
+  }
+
+  .console > h3 {
+    width: 100%;
+    position: absolute;
+  }
+}
 
 

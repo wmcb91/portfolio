@@ -2,20 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Palindrome Chain Length</title>
+    <title>Palindrome Chain - 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Will McBride Portfolio">
     <meta name="author" content="Will McBride">
-    <link rel="stylesheet" href="assets/css/code-editor.css">
-    <link rel="shortcut icon" href="assets/img/circle-logo.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/img/circle-logo.png">
+    <link rel="stylesheet" href="../assets/css/code-editor.css">
+    <link rel="shortcut icon" href="../assets/img/circle-logo.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/img/circle-logo.png">
   </head>
   <body>
     <div class="code-editor">
     <code id="code">
       <!-- Description -->
       <p>
-        <a class="comment">
+        <!-- <a class="comment">
           \*<br>
           CHALLENGE INSTRUCTIONS (Original)
           Number is a palindrome if it is equal to the number with digits in reversed order.<br>
@@ -37,9 +37,9 @@
           4884 is a palindrome and we needed 4 steps to obtain it, so palindrome_chain_length(87) == 4
           <br>
           */
-        </a>
+        </a> -->
       </p>
-      <!-- function1  -->
+      <!-- function1 - iter1  -->
       <p>
         <a class="statement">const</a>
         <a class="func">reverse</a>
@@ -53,13 +53,13 @@
         r
         <a class="op">=</a>
         [];
-        <a id="r-val" class="comment">\\ r = []</a>
+        <a id="r-val" class="comment">// r = []</a>
       </p>
       <p>&nbsp;
         n
         <a class="op">=</a>
         <a class="obj">n</a>.<a class="meth">toString</a>().<a class="meth">split</a>('');
-        <a id="rev-n-val" class="comment">\\ n = undefined</a>
+        <a id="rev-n-val" class="comment">// n = undefined</a>
       </p>
       <p>&nbsp;
         <a class="statement">for</a>
@@ -82,12 +82,33 @@
       <p>&nbsp;
         <a class="statement">return</a>
         <span class="res">Number</span>(<a class="obj">r</a>.<a class="meth">join</a>(<a class="str">''</a>)) ;
-        <a id="rev-return-val" class="comment">\\ return undefined</a>
+        <a id="rev-return-val" class="comment">// return undefined</a>
       </p>
       <p>
         };
       </p>
       <br>
+
+      <!-- function1 - iter2  -->
+      <div style="display:none;">
+        <p>
+          <a class="statement">const</a>
+          <a class="func">reverse</a>
+          <a class="op">=</a>
+          (n)
+          <a class="op">=></a>
+          {
+        </p>
+        <p>&nbsp;
+          <a class="statement">return</a>
+          <span class="res">Number</span>(<a class="obj">n</a>.<a class="meth">toString</a>().<a class="meth">split</a>(<a class="str">''</a>).<a class="meth">reverse</a>().<a class="meth">join</a>(<a class="str">''</a>));
+          <a id="rev-return-val" class="comment">// return undefined</a>
+        </p>
+        <p>
+          };
+        </p>
+        <br>
+      </div>
 
       <!-- function2  -->
       <p>
@@ -103,7 +124,7 @@
         sum
         <a class="op">=</a>
         <a class="num">0</a>;
-        <a id="r-val" class="comment">\\ sum = 0</a>
+        <a id="r-val" class="comment">// sum = 0</a>
       </p>
       <p>&nbsp;
         <a class="statement">while</a>
@@ -130,7 +151,7 @@
         n
         <a class="op">+</a>
         <a class="func">reverse</a>(n));
-        <a id="main-n-val" class="comment">\\ n = undefined</a>
+        <a id="main-n-val" class="comment">// n = undefined</a>
       </p>
       <p class="loop-line">&nbsp;&nbsp;&nbsp;
         sum<a class="op">++</a>;
@@ -143,7 +164,7 @@
       </p>
       <br>
       <p>
-        <a class="func">palindromeChainLength</a>(<a id="max-val" class="num">87</a>);
+        <a class="func">palindromeChainLength</a>(<a id="test-val" class="num">100</a>);
       </p>
 
       <div class="controls">
@@ -164,12 +185,17 @@
       <h3>Console</h3> 
       <code id="output"></code>
     </div>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./fizzbuzz_1.html">fizzbuzz-1.js</a>
-      <a href="./fizzbuzz_2.html">fizzbuzz-2.js</a>
-      <a href="./palindrome_chain.html">palindrome_chain.js</a>
+    <nav class="iterations">
+      <a href="./1.html">Iteration 1</a>
+      <a href="./2.html">Iteration 2</a>
+      <a href="./3.html">Iteration 3</a>
     </nav>
-    <script type="text/javascript" src="assets/js/palindrome_chain.js"></script>    
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../fizzbuzz_1.html">fizzbuzz-1.js</a>
+      <a href="../fizzbuzz_2.html">fizzbuzz-2.js</a>
+      <a href="./1.html">palindrome_chain.js</a>
+    </nav>
+    <script type="text/javascript" src="../assets/js/palindrome_chain_1.js"></script>    
   </body>
 </html>

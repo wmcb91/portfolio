@@ -6,32 +6,63 @@ const $ = (query) => {
 };
 
 const app = {
-  preLoopLines: 1,
-  loopLines: 2,
-  max: 100,
+  preLoopLines: 2,
+  loopLines: 5,
+  testNum: 100,
   lineDelay: 60,
   fullSpeed: false,
+  animation: {
+    loopCount: 0,
+  },
 };
 
-const ternaryFizzBuzz = (max, lines, lineDelay) => {
-  for (let i = 0; i < max;) {
-    let output = (++i % 3 ? '' : 'Fizz') + (i % 5 ? '' : 'Buzz') || i;
-    let outputOut = `// output = ${output}`;
-    let consoleOut;
-    if (typeof output === 'string') {
-      consoleOut = `<p><a class="str">${output}</a></p>`;
-    } else {
-      consoleOut = `<p><a class="num">${output}</a></p>`;
+const reverse = (n) => {
+  let r = [];
+  n = n.toString().split('');
+  for (let i = n.length; i > 0; i--) {
+    r.push(n.pop());
+    $('#r-val').innerHTML = `// r = [${r}]`;
+    // app.animation.loopCount += 2;
+  }
+  // app.animation.loopCount += 3;
+  return Number(r.join(''));
+};
+
+// iter 2
+const reverse2 = (n) => {
+  app.animation.loopCount++;
+  return Number(n.toString().split('').reverse().join(''));
+};
+
+const palindromeChainLength = (n) => {
+  let sum = 0;
+  while (true) {
+    app.animation.loopCount++;
+    if (n === reverse(n)) {
+      // console.log(app.animation.loopCount);
+      console.log(n);
+      $('#output').innerHTML += n;
+      return sum;
     }
+    n = n + reverse(n);
+    sum++;
+  }  
+};
 
-    setTimeout(function() {      
-      $('#output-val').innerHTML = outputOut;
-    }, lines * lineDelay * i - lineDelay);
-
-    setTimeout(function() {      
-      $('#output').innerHTML += consoleOut;
-    }, lines * lineDelay * i);
-  };
+const palindromeChainLength2 = (n) => {
+  let sum = 0;
+  while (true) {
+    app.animation.loopCount++;
+    let rev = reverse2(n);
+    if (n === rev) {
+      console.log(app.animation.loopCount);
+      console.log(n);
+      $('#output').innerHTML += n;
+      return sum;
+    }
+    n = n + rev;
+    sum++;
+  }  
 };
 
 const animateLoop = (max, lines, lineDelay) => {
@@ -80,19 +111,24 @@ const stopAllTimeouts = () => {
 };
 
 const runCodeAnimation = () => {
+  app.animation.loopCount = 0;
   stopAllTimeouts();  
-  $('#output-val').innerHTML = '// output = undefined';
+  $('#r-val').innerHTML = '// r = []';
+  $('#rev-n-val').innerHTML = '// n = undefined';
+  $('#rev-return-val').innerHTML = '// return undefined';
   $('#output').innerHTML = '';
-  $('#max-val').innerHTML = app.max;
-
-  animatePreLoop(app.preLoopLines, app.lineDelay);
-
-  setTimeout(function() {
-    setTimeout(function() {
-      animateLoop(app.max, app.loopLines, app.lineDelay);
-    }, app.lineDelay);
-    ternaryFizzBuzz(app.max, app.loopLines, app.lineDelay);
-  }, (app.preLoopLines - 1) * app.lineDelay);
+  $('#test-num').innerHTML = app.testNum;
+  $('#test-val').innerHTML = app.testNum;
+  
+  // animatePreLoop(app.preLoopLines, app.lineDelay);
+  // palindromeChainLength(app.testNum);
+  $('#output').innerHTML += palindromeChainLength2(app.testNum);
+  
+  // setTimeout(function() {
+  //   // setTimeout(function() {
+  //   //   animateLoop(app.max, app.loopLines, app.lineDelay);
+  //   // }, app.lineDelay);
+  // }, (app.preLoopLines - 1) * app.lineDelay);
 };
 
 const toggleFullSpeed = () => {
@@ -106,22 +142,31 @@ const toggleFullSpeed = () => {
   }
 };
 
-$('#max').addEventListener('change', function() {
-  let newMax = this.value;
-  if (newMax < 0) {
-    newMax = 0;
-  } else if (newMax > 1000) {
-    newMax = 1000;
-  } else if (isNaN(newMax)) {
-    newMax = 100;
+$('#test-num').addEventListener('change', function() {
+  let newTestNum = this.value;
+  if (isNaN(newTestNum)) {
+    newTestNum = 100;
+  } else {
+    newTestNum = Number(newTestNum);
   }
-  this.value = newMax;
-  app.max = newMax;
+
+  if (newTestNum < 0) {
+    newTestNum = 0;
+  } else if (newTestNum > 1000) {
+    newTestNum = 1000;
+  }
+  this.value = newTestNum;
+  app.testNum = newTestNum;
 });
 
 $('#speed').addEventListener('change', function() {
-  if (app.fullSpeed) return;
   let newSpeed = this.value;
+  if (isNaN(newSpeed)) {
+    newSpeed = 50;
+  } else {
+    newSpeed = Number(newSpeed);
+  }
+
   if (newSpeed <= 0) {
     newSpeed = 1;
   } else if (newSpeed > 100) {
@@ -138,4 +183,3 @@ $('#speed').addEventListener('change', function() {
 $('#speed-label').addEventListener('click', toggleFullSpeed);
 $('#run').addEventListener('click', runCodeAnimation);
 $('#stop').addEventListener('click', stopAllTimeouts);
-
