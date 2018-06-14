@@ -14,80 +14,79 @@
     <div class="code-editor">
     <code id="code">
       <p>
-        <a class="statement">const</a>
-        <a class="func">bitwiseFizzBuzz</a>
-        <a class="op">=</a>
+        <span class="statement">const</span>
+        <span class="func">bitwiseFizzBuzz</span>
+        <span class="op">=</span>
         (max)
-        <a class="op">=></a>
+        <span class="op">=></span>
         {
       </p>
       <p>&nbsp;
-        <a class="statement">const</a>
+        <span class="statement">const</span>
         words
-        <a class="op">=</a>
-        [<a class="str">'Fizz'</a>,
-        <a class="str">'Buzz'</a>,
-        <a class="str">'FizzBuzz'</a>];
+        <span class="op">=</span>
+        [<span class="str">'Fizz'</span>,
+        <span class="str">'Buzz'</span>,
+        <span class="str">'FizzBuzz'</span>];
       </p>
       <p>&nbsp;
-        <a class="statement">let</a>
+        <span class="statement">let</span>
         mask
-        <a class="op">=</a>
-        <a class="num">810092048</a>;
-        <a class="comment">// 11 00 00 01 00 10 01 00 00 01 10 00 01 00 00</a>
+        <span class="op">=</span>
+        <span class="num">810092048</span>;
+        <span class="comment">// 11 00 00 01 00 10 01 00 00 01 10 00 01 00 00</span>
       </p>
       <p>&nbsp;
-        <a class="statement">let</a>
+        <span class="statement">let</span>
         c
-        <a class="op">=</a>
-        <a class="num">0</a>;
+        <span class="op">=</span>
+        <span class="num">0</span>;
       </p>
       <p>&nbsp;
-        <a class="statement">let</a>
+        <span class="statement">let</span>
         output;
       </p>
       <p>&nbsp;
-        <a class="statement">for</a>
-        (<a class="statement">let</a> i 
-        <a class="op">=</a>
-        <a class="num">1</a>;
+        <span class="statement">for</span>
+        (<span class="statement">let</span> i 
+        <span class="op">=</span>
+        <span class="num">1</span>;
         i
-        <a class="op"><=</a>
+        <span class="op"><=</span>
         max;
-        i<a class="op">++</a>)
+        i<span class="op">++</span>)
         {
       </p>
       <p class="loop-line">&nbsp;&nbsp;&nbsp;
         c
-        <a class="op">=</a>
+        <span class="op">=</span>
         mask
-        <a class="op">&</a>
-        <a class="num">3</a>;
-        <a id="c-val" class="comment">// c = 0</a>
+        <span class="op">&</span>
+        <span class="num">3</span>;
+        <span id="c-val" class="comment">// c = 0</span>
       </p>
       <p class="loop-line">&nbsp;&nbsp;&nbsp;
         mask 
-        <a class="op">=</a>
+        <span class="op">=</span>
         mask 
-        <a class="op">>></a>
-        <a class="num">2</a>
-        <a class="op">|</a>
+        <span class="op">>></span>
+        <span class="num">2</span>
+        <span class="op">|</span>
         c
-        <a class="op"><<</a>
-        <a class="num">28</a>;
-        <a id="mask-val" class="comment">// mask = 810092048</a>
+        <span class="op"><<</span>
+        <span class="num">28</span>;
+        <span id="mask-val" class="comment">// mask = 810092048</span>
       </p>
       <p class="loop-line">&nbsp;&nbsp;&nbsp;
         output
-        <a class="op">=</a>
-        words[c - <a class="num">1</a>]
-        <a class="op">||</a>
+        <span class="op">=</span>
+        words[c - <span class="num">1</span>]
+        <span class="op">||</span>
         i;
-        <a id="output-val" class="comment">// output = undefined</a>
+        <span id="output-val" class="comment">// output = undefined</span>
       </p>
       <p class="loop-line">&nbsp;&nbsp;&nbsp;
-        <a class="res">console</a>.<a class="meth">log</a>(output);
-        <a class="comment"></a>
+        <span class="res">console</span>.<span class="meth">log</span>(output);
       </p>
       <p>&nbsp;
         }
@@ -97,7 +96,12 @@
       </p>
       <br>
       <p>
-        <a class="func">bitwiseFizzBuzz</a>(<a id="max-val" class="num">100</a>);
+        <span class="func">bitwiseFizzBuzz</span>(<span id="max-val" class="num">100</span>);
+      </p>
+      <p>
+        <span class="comment">// Adapted from:</span>
+        <br>
+        <span class="comment">// giuseppeg and Zohar Babin</span>
       </p>
 
       <div class="controls">
