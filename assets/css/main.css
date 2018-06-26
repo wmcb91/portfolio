@@ -716,7 +716,7 @@ p.caption-descr a {
 
 .project-item-overlay .inner ul li a.proj-btn {
   background: rgba(0, 78, 100);
-  background: rgba(0, 78, 100, .75);
+  background: rgba(0, 78, 100, .9);
   -moz-border-radius: 0;
   border-radius: 2px;
   -moz-box-shadow: 26px 26px 22px rgba(50, 50, 50, .42);
