@@ -710,10 +710,12 @@ p.caption-descr a {
 }
 
 .project-item-overlay .inner ul li a.proj-btn:hover {
-  background: #003060
+  background: #003060;
+  background: rgba(0, 78, 100, 1);
 }
 
 .project-item-overlay .inner ul li a.proj-btn {
+  background: rgba(0, 78, 100);
   background: rgba(0, 78, 100, .75);
   -moz-border-radius: 0;
   border-radius: 2px;
