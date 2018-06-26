@@ -782,7 +782,7 @@ p.caption-descr a {
   display: block;
   position: relative;
   text-align: center;
-  top: 30%;
+  top: 25%;
   width: 100%
 }
 
@@ -1033,8 +1033,13 @@ hr.half1 {
 
 /*! CSS Used from: http://wmcbride.com/assets/css/custom.min.css */
 
-.about-me-span p, .brand, .devicon, .icon-description, .logo {
+.about-me-span p, .brand, .devicon, .mini-icon, .icon-description, .logo {
   user-select: none
+}
+
+.mini-icon {
+  margin: 30px 8px;
+  width: 12.5%;
 }
 
 body {

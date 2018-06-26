@@ -40,7 +40,25 @@ $(document).ready(function(){
 		window.setTimeout(function() {
 			$('.project-item-overlay').removeClass('no-pointer-events');
 		}, 500);
-	})
+	});
+
+	function addLangIcons() {
+    var path = 'assets/img/devicon-master/icons/';
+    var iconRefs = {
+      html: 'html5/html5-plain-wordmark.svg',
+      css: 'css3/css3-plain-wordmark.svg',
+      javascript: 'javascript/javascript-original.svg',
+      jquery: 'jquery/jquery-plain-wordmark.svg',
+      rails: 'rails/rails-plain-wordmark.svg'
+    };
+
+    for (lang in iconRefs) {
+      $('.lang-overlay').find(`.${lang}`).append(
+        `<img class="mini-icon" src="${path}${iconRefs[lang]}">`
+      );
+    }
+  };
+  addLangIcons();
 
 	window.addEventListener("wheel", function(){$('body').stop();},{passive:true});
 });
