@@ -49,12 +49,14 @@ $(document).ready(function(){
       css: 'css3/css3-plain-wordmark.svg',
       javascript: 'javascript/javascript-original.svg',
       jquery: 'jquery/jquery-plain-wordmark.svg',
-      rails: 'rails/rails-plain-wordmark.svg'
+			rails: 'rails/rails-plain-wordmark.svg',
+			python: 'python/python-alt-wordmark.svg',
+			django: 'django/django-icon.png'
     };
 
     for (lang in iconRefs) {
       $('.lang-overlay').find(`.${lang}`).append(
-        `<img class="mini-icon" src="${path}${iconRefs[lang]}">`
+        `<img class="mini-icon" src="${path}${iconRefs[lang]}" title="${lang}" alt="${lang}">`
       );
     }
   };
