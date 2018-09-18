@@ -60,7 +60,9 @@ const animateLoop = (max, lines, lineDelay) => {
       });
       
       $('.loop-line')[i % lines].classList.add('active-line');
-      $('.loop-line .comment')[i % lines].innerHtml = i;
+      if ($('.loop-line .comment')[i % lines]) {
+        $('.loop-line .comment')[i % lines].innerHtml = i;
+      }
     }, i * lineDelay);
   }
 
