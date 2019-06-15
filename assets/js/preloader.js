@@ -58,7 +58,10 @@ $(document).ready(function(){
       $('.lang-overlay').find(`.${lang}`).append(
         `<img class="mini-icon" src="${path}${iconRefs[lang]}" title="${lang}" alt="${lang}">`
       );
-    }
+		}
+		
+		let date = new Date();
+		$('#year').text(date.getFullYear());
   };
   addLangIcons();
 
