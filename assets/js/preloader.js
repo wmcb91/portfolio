@@ -51,7 +51,8 @@ $(document).ready(function(){
       jquery: 'jquery/jquery-plain-wordmark.svg',
 			rails: 'rails/rails-plain-wordmark.svg',
 			python: 'python/python-alt-wordmark.svg',
-			django: 'django/django-icon.png'
+			django: 'django/django-icon.png',
+			vue: 'vue/vue-plain-wordmark.svg'
     };
 
     for (lang in iconRefs) {
