@@ -1,560 +1,754 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Will McBride | Web Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Will McBride Portfolio">
-  <meta name="author" content="Will McBride">
-  <!-- Styles -->
-  <link href="./assets/css/font-awesome-slim.min.css" rel="stylesheet">
-  <link href="./assets/css/main.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
-  <link rel="shortcut icon" href="./assets/img/circle-logo.png">
-  <link rel="apple-touch-icon-precomposed" href="./assets/img/circle-logo.png">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Will McBride | Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Will McBride Portfolio" />
+    <meta name="author" content="Will McBride" />
+    <!-- Styles -->
+    <link href="./assets/css/font-awesome-slim.min.css" rel="stylesheet" />
+    <link href="./assets/css/main.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/img/circle-logo.png" />
+    <link rel="apple-touch-icon-precomposed" href="./assets/img/circle-logo.png" />
+  </head>
 
-<body data-spy="scroll" data-target=".scroller-spy" data-twttr-rendered="true">
-<section id="top-section">
-  <div class="headertop needheader">
-  <!-- BACKGROUND-->
-    <span id="snow-toggle" class="fa fa-snowflake-o fa-3x active" style="display:none;"></span>
-    <div class="action-banner-bg">
-      <div class='snow'><!-- CREDIT to Nicky Christensen for snow effect codepen @NickyCDK -->
-      </div>
-    </div>
-    <div class="nav-reaction" style="display: none;">
-      <div class="navbar navbar-static-top">
-        <div class="navbar-inner">
-  			  <div class="logo-div">
-            <img class="logo" src="./assets/img/circle-logo.png" alt='mcbride logo'>
-            <span class="brand" id="brand" style='cursor:default;'>
-              <span>Will McBride
-                <small class="sub-title">Full Stack Web Developer</small>
-              </span>
-            </span>
-  				</div>
-          <div id="main-nav" class="scroller-spy">
-            <div class="nav-collapse collapse">
-              <ul class="nav" id="nav">
-                <li><a href="#bio-section">About</a></li>
-                <li><a href="#skills-section">Skills</a></li>
-                <li><a href="#project-section">Projects</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-                <li><a href="./mcbride_resume.pdf">Resume</a></li>
-              </ul>
-            </div>
+  <body data-spy="scroll" data-target=".scroller-spy" data-twttr-rendered="true">
+    <section id="top-section">
+      <div class="headertop needheader">
+        <!-- BACKGROUND-->
+        <span
+          id="snow-toggle"
+          class="fa fa-snowflake-o fa-3x active"
+          style="display: none"
+        ></span>
+        <div class="action-banner-bg">
+          <div class="snow">
+            <!-- CREDIT to Nicky Christensen for snow effect codepen @NickyCDK -->
           </div>
         </div>
-      </div>
-    </div>
-    <div class="over-image-title">
-      <h2 class="name-header">Will McBride</h2>
-  		<h2 class="dev-header">Full Stack Web Developer</h2>
-  	</div>
-  </div>
-  <!-- END TOP MENU -->
-</section>
-
-
-<div class="container">
-<!-- BIO SECTION-->
-<section id="bio-section">
-  <div class="row-fluid">
-		<hr class="half">
-			<h2 class="center standard-h2title ">
-        <span class="large-text"><span class="first-word">About</span> Me</span>
-			</h2>
-		<!-- <hr class="half"> -->
-	</div>
-  <hr class="half">
-  <div class="row-fluid">
-    <div class="about-me-span span6">
-      <span class="fa fa-laptop fa-4x main-color"></span>
-      <h3 class="features-title">
-        <span class="first-word">Front End</span> Design
-      </h3>
-      <p>
-        I strive to create intuitive, attractive and highly functional web apps.
-        I am always going back to my projects to optimize performance,
-        test responsiveness, and improve features until the app delivers the best
-        possible experience for the user.
-      </p>
-    </div>
-    <div class="about-me-span span6">
-      <span class="fa fa-database fa-4x main-color"></span>
-      <h3 class="features-title">
-        <span class="first-word">Back End</span> Architecture
-      </h3>
-      <p>
-        I have built RESTful APIs using Django, Flask, Ruby on Rails, and Node.js.
-        Additionally, I have experience working with both SQL and NoSQL database
-        technologies like PostgreSQL, SQLite, MongoDB, and OrientDB.
-      </p>
-    </div>
-  </div>
-</section>
-<!--/ BIO SECTION-->
-
-
-<!-- SKILLS SECTION-->
-<section id="skills-section">
-  <div class="row-fluid">
-    <hr class="half">
-    <h2 class="center standard-h2title">
-      <span class="large-text"><span class="first-word">Skills</span> I will bring you</span>
-    </h2>
-    <hr class="half">
-  </div>
-  <div class="row-fluid devicon-row">
-    <!-- SKILLS ICONS-->
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/javascript/javascript-original.svg"
-           alt="JavaScript" title="JavaScript">
-    </div>
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/react/react-original.svg"
-           alt="React" title="React">
-    </div>
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/gatsby/gatsby-original.svg"
-           alt="Gatsby" title="Gatsby">
-    </div>
-    <div class="span2 devicon vue">
-      <img src="./assets/img/devicon-master/icons/vue/vue-plain-wordmark.svg"
-           alt="Vue" title="Vue.js">
-    </div>
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/python/python-alt-wordmark.svg"
-           alt="Python" title="Python">
-    </div>
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/django/django-icon.png" 
-           alt="Django" title="Django">
-    </div>
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/nodejs/nodejs-original.svg"
-           alt="Node.js" title="Node.js">
-    </div>
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/drupal/drupal-original-wordmark.svg"
-           alt="Drupal" title="Drupal">
-    </div>
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/jquery/jquery-plain-wordmark.svg"
-           alt="jQuery" title="jQuery">
-    </div>
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-           alt="Bootstrap" title="Bootstrap">
-    </div>
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/mongodb/mongodb-plain-wordmark.svg"
-           alt="MongoDB" title="MongoDB">
-    </div>
-    <div class="span2 devicon">
-      <img src="./assets/img/devicon-master/icons/postgresql/postgresql-plain-wordmark.svg"
-           alt="PostgreSQL" title="PostgreSQL">
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS SECTION-->
-<section id="project-section">
-  <div class="row-fluid">
-    <hr class="half">
-      <h2 class="center standard-h2title"> <span class="large-text">
-        <span class="first-word">Recent</span> Projects</span>
-      </h2>
-      <div class="tip-info" style="display: none;">
-        <span class="fa fa-info-circle fa-1x" aria-hidden="true"></span>
-        <span>Click the thumbnails for more infomation</span>
-      </div>
-    <hr class="half">
-  </div>
-  <!-- END: FEATURED ITEM -->
-  <div id="container-folio" class="row">
-    <div class="span12">
-      <div id="portfolio" class="row">
-        <!-- START Portfolio item - Epic Vs Ikon  -->
-        <div class="span6 project-item graphics box">
-          <div class="thumbnail">
-            <div class="project-item-image-container">
-              <div class="project-item-overlay">
-                <div class="inner">
-                  <ul>
-                    <li>
-                      <a class="proj-btn"
-                          href="https://epicorikon.com"
-                          title="Direct Link">
-                        <span class="fa fa-link fa-3x"></span>
-                      </a>
-                    </li>
-                    <li class="lang-overlay">
-                      <div class="html css javascript vue"></div>
-                    </li>
+        <div class="nav-reaction" style="display: none">
+          <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+              <div class="logo-div">
+                <img
+                  class="logo"
+                  src="./assets/img/circle-logo.png"
+                  alt="mcbride logo"
+                />
+                <span class="brand" id="brand" style="cursor: default">
+                  <span
+                    >Will McBride
+                    <small class="sub-title">Full Stack Web Developer</small>
+                  </span>
+                </span>
+              </div>
+              <div id="main-nav" class="scroller-spy">
+                <div class="nav-collapse collapse">
+                  <ul class="nav" id="nav">
+                    <li><a href="#bio-section">About</a></li>
+                    <li><a href="#skills-section">Skills</a></li>
+                    <li><a href="#project-section">Projects</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <li><a href="./mcbride_resume.pdf">Resume</a></li>
                   </ul>
                 </div>
               </div>
-              <img class="project-2"
-                   src="./assets/img/epic-or-ikon.png"
-                   alt="Epic or Ikon" title="Epic or Ikon">
-            </div>
-
-            <!-- CAPTION -->
-            <div class="caption">
-              <div class="transit-to-top">
-                <h3 class="p-title standard-h3title">Epic or Ikon?</h3>
-                <p class="caption-descr">
-                    A website that helps skiers and snowboarders decide if the Epic 
-                    Pass or Ikon Pass is best for their winter season. 
-                    Will you go with Epic or Ikon?
-                </p>
-              </div>
             </div>
           </div>
         </div>
-        <!-- END portfolio item -->
+        <div class="over-image-title">
+          <h2 class="name-header">Will McBride</h2>
+          <h2 class="dev-header">Full Stack Web Developer</h2>
+        </div>
+      </div>
+      <!-- END TOP MENU -->
+    </section>
 
-        <!-- START Portfolio item - Groovie  -->
-        <div class="span6 project-item graphics box">
-          <div class="thumbnail">
-            <div class="project-item-image-container">
-              <div class="project-item-overlay">
-                <div class="inner">
-                  <ul>
-                    <li>
-                      <a class="proj-btn"
-                         href="https://www.grooviemovieapp.com"
-                         title="Direct Link">
-                        <span class="fa fa-link fa-3x"></span>
-                      </a>
-                    </li>
-                    <li class="lang-overlay">
-                      <div class="html css javascript python django"></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <img class="project-2"
-                    src="./assets/img/groovie-dark-min.png"
-                    alt="Groovie" title="Groovie">
-            </div>
-
-            <!-- CAPTION -->
-            <div class="caption">
-              <div class="transit-to-top">
-                <h3 class="p-title standard-h3title">Groovie</h3>
-                <p class="caption-descr">
-                  Choosing a movie to watch with a group of friends is a headached
-                  and detracts from what should be a relaxing night. Groovie picks
-                  a movie for the group based on all of your preferences.
-                </p>
-              </div>
-            </div>
+    <div class="container">
+      <!-- BIO SECTION-->
+      <section id="bio-section">
+        <div class="row-fluid">
+          <hr class="half" />
+          <h2 class="center standard-h2title">
+            <span class="large-text"><span class="first-word">About</span> Me</span>
+          </h2>
+          <!-- <hr class="half"> -->
+        </div>
+        <hr class="half" />
+        <div class="row-fluid">
+          <div class="about-me-span span6">
+            <span class="fa fa-laptop fa-4x main-color"></span>
+            <h3 class="features-title">
+              <span class="first-word">Front End</span> Design
+            </h3>
+            <p>
+              I strive to create intuitive, attractive and highly functional web
+              apps. I am always going back to my projects to optimize performance,
+              test responsiveness, and improve features until the app delivers the
+              best possible experience for the user.
+            </p>
+          </div>
+          <div class="about-me-span span6">
+            <span class="fa fa-database fa-4x main-color"></span>
+            <h3 class="features-title">
+              <span class="first-word">Back End</span> Architecture
+            </h3>
+            <p>
+              I have built RESTful APIs using Django, Flask, Ruby on Rails, and
+              Node.js. Additionally, I have experience working with both SQL and
+              NoSQL database technologies like PostgreSQL, SQLite, MongoDB, and
+              OrientDB.
+            </p>
           </div>
         </div>
-        <!-- END portfolio item -->
+      </section>
+      <!--/ BIO SECTION-->
 
-        <!-- START Portfolio item - Abington Lane  -->
-        <div class="span6 project-item graphics box">
-          <div class="thumbnail">
-            <div class="project-item-image-container">
-              <div class="project-item-overlay">
-                <div class="inner">
-                  <ul>
-                    <li class="lang-overlay">
-                      <div class="html css javascript"></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <img class="project-2"
-                   src="./assets/img/ab-lane-min.jpg"
-                   alt="abingtonlane.com" title="abingtonlane.com">
-            </div>
-
-            <!-- CAPTION -->
-            <div class="caption">
-              <div class="transit-to-top">
-                <h3 class="p-title standard-h3title">Abington Lane</h3>
-                <p class="caption-descr">
-                  A custom E-commerce website custom built on Shopify.
-                  Provides elegant shopping experience for customers on custom
-                  theme build. Custom functionality and styling using JavaScript 
-                  and CSS.
-                </p>
-              </div>
-            </div>
+      <!-- SKILLS SECTION-->
+      <section id="skills-section">
+        <div class="row-fluid">
+          <hr class="half" />
+          <h2 class="center standard-h2title">
+            <span class="large-text"
+              ><span class="first-word">Skills</span> I will bring you</span
+            >
+          </h2>
+          <hr class="half" />
+        </div>
+        <div class="row-fluid devicon-row">
+          <!-- SKILLS ICONS-->
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              title="JavaScript"
+            />
+          </div>
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/react/react-original.svg"
+              alt="React"
+              title="React"
+            />
+          </div>
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/gatsby/gatsby-original.svg"
+              alt="Gatsby"
+              title="Gatsby"
+            />
+          </div>
+          <div class="span2 devicon vue">
+            <img
+              src="./assets/img/devicon-master/icons/vue/vue-plain-wordmark.svg"
+              alt="Vue"
+              title="Vue.js"
+            />
+          </div>
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/python/python-alt-wordmark.svg"
+              alt="Python"
+              title="Python"
+            />
+          </div>
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/django/django-icon.png"
+              alt="Django"
+              title="Django"
+            />
+          </div>
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+              title="Node.js"
+            />
+          </div>
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/drupal/drupal-original-wordmark.svg"
+              alt="Drupal"
+              title="Drupal"
+            />
+          </div>
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/jquery/jquery-plain-wordmark.svg"
+              alt="jQuery"
+              title="jQuery"
+            />
+          </div>
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+              alt="Bootstrap"
+              title="Bootstrap"
+            />
+          </div>
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/mongodb/mongodb-plain-wordmark.svg"
+              alt="MongoDB"
+              title="MongoDB"
+            />
+          </div>
+          <div class="span2 devicon">
+            <img
+              src="./assets/img/devicon-master/icons/postgresql/postgresql-plain-wordmark.svg"
+              alt="PostgreSQL"
+              title="PostgreSQL"
+            />
           </div>
         </div>
-        <!-- END portfolio item -->
+      </section>
 
-        <!-- START portfolio item - JENNA HUNTER -->
-        <div class="span6 project-item graphics box">
-            <div class="thumbnail">
-              <div class="project-item-image-container">
-                <div class="project-item-overlay">
-                  <div class="inner">
-                    <ul>
-                      <li class="lang-overlay">
-                        <div class="html css javascript"></div>
-                      </li>
-                    </ul>
+      <!-- PROJECTS SECTION-->
+      <section id="project-section">
+        <div class="row-fluid">
+          <hr class="half" />
+          <h2 class="center standard-h2title">
+            <span class="large-text">
+              <span class="first-word">Recent</span> Projects</span
+            >
+          </h2>
+          <div class="tip-info" style="display: none">
+            <span class="fa fa-info-circle fa-1x" aria-hidden="true"></span>
+            <span>Click the thumbnails for more infomation</span>
+          </div>
+          <hr class="half" />
+        </div>
+        <!-- END: FEATURED ITEM -->
+        <div id="container-folio" class="row">
+          <div class="span12">
+            <div id="portfolio" class="row">
+              <!-- START Portfolio item - East West Basics  -->
+              <div class="span6 project-item graphics box">
+                <div class="thumbnail">
+                  <div class="project-item-image-container">
+                    <div class="project-item-overlay">
+                      <div class="inner">
+                        <ul>
+                          <li>
+                            <a
+                              class="proj-btn"
+                              href="https://eastwestbasics.com"
+                              title="Direct Link"
+                              aria-label="Direct Link to East West Basics"
+                            >
+                              <span class="fa fa-link fa-3x"></span>
+                            </a>
+                          </li>
+                          <li class="lang-overlay">
+                            <div class="nextjs react"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img
+                      class="project-2"
+                      src="./assets/img/east-west-basics.jpg"
+                      alt="East West Basics"
+                    />
+                  </div>
+
+                  <!-- CAPTION -->
+                  <div class="caption">
+                    <div class="transit-to-top">
+                      <h3 class="p-title standard-h3title">East West Basics</h3>
+                      <p class="caption-descr">
+                        East West Basics is a one-stop destination for all your
+                        product design and manufacturing needs. Their website is
+                        built with Next.js and
+                      </p>
+                    </div>
                   </div>
                 </div>
-              <img class="project-2"
-                   src="./assets/img/jenna_hunter-min.jpg"
-                   alt="LJM Beads" title="LJM Beads">
               </div>
-              <div class="caption">
-                <div class="transit-to-top">
-                  <h3 class="p-title standard-h3title">Jenna Hunter</h3>
-                  <p class="caption-descr">
-                    An E-commerce website custom built for a client on Shopify.
-                    Provides simple and elegant shopping experience for customers.
-                    Custom functionality and styling using JavaScript and CSS.
-                  </p>
+              <!-- END portfolio item -->
+
+              <!-- START Portfolio item - Meelancer  -->
+              <div class="span6 project-item graphics box">
+                <div class="thumbnail">
+                  <div class="project-item-image-container">
+                    <div class="project-item-overlay">
+                      <div class="inner">
+                        <ul>
+                          <li>
+                            <a
+                              class="proj-btn"
+                              href="https://meelancer.io"
+                              title="Direct Link"
+                              aria-label="Direct Link to Meelancer"
+                            >
+                              <span class="fa fa-link fa-3x"></span>
+                            </a>
+                          </li>
+                          <li class="lang-overlay">
+                            <div class="python react nextjs"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img
+                      class="project-2"
+                      src="./assets/img/meelancer.jpg"
+                      alt="Meelancer"
+                    />
+                  </div>
+
+                  <!-- CAPTION -->
+                  <div class="caption">
+                    <div class="transit-to-top">
+                      <h3 class="p-title standard-h3title">Meelancer</h3>
+                      <p class="caption-descr">
+                        Meelancer helps freelancers track their hours, invoice
+                        clients and hit their financial goals.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- END portfolio item -->
+
+              <!-- START Portfolio item - Epic Vs Ikon  -->
+              <div class="span6 project-item graphics box">
+                <div class="thumbnail">
+                  <div class="project-item-image-container">
+                    <div class="project-item-overlay">
+                      <div class="inner">
+                        <ul>
+                          <li>
+                            <a
+                              class="proj-btn"
+                              href="https://epicorikon.com"
+                              title="Direct Link"
+                            >
+                              <span class="fa fa-link fa-3x"></span>
+                            </a>
+                          </li>
+                          <li class="lang-overlay">
+                            <div class="gatsby"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img
+                      class="project-2"
+                      src="./assets/img/epicorikon.jpg"
+                      alt="Epic or Ikon"
+                      title="Epic or Ikon"
+                    />
+                  </div>
+
+                  <!-- CAPTION -->
+                  <div class="caption">
+                    <div class="transit-to-top">
+                      <h3 class="p-title standard-h3title">Epic or Ikon?</h3>
+                      <p class="caption-descr">
+                        A website that helps skiers and snowboarders decide if the
+                        Epic Pass or Ikon Pass is best for their winter season. Will
+                        you go with Epic or Ikon?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END portfolio item -->
+
+              <!-- START Portfolio item - Groovie  -->
+              <div class="span6 project-item graphics box">
+                <div class="thumbnail">
+                  <div class="project-item-image-container">
+                    <div class="project-item-overlay">
+                      <div class="inner">
+                        <ul>
+                          <li>
+                            <a
+                              class="proj-btn"
+                              href="https://www.grooviemovieapp.com"
+                              title="Direct Link"
+                            >
+                              <span class="fa fa-link fa-3x"></span>
+                            </a>
+                          </li>
+                          <li class="lang-overlay">
+                            <div class="html css javascript python django"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img
+                      class="project-2"
+                      src="./assets/img/groovie-dark-min.png"
+                      alt="Groovie"
+                      title="Groovie"
+                    />
+                  </div>
+
+                  <!-- CAPTION -->
+                  <div class="caption">
+                    <div class="transit-to-top">
+                      <h3 class="p-title standard-h3title">Groovie</h3>
+                      <p class="caption-descr">
+                        Choosing a movie to watch with a group of friends is a
+                        headached and detracts from what should be a relaxing night.
+                        Groovie picks a movie for the group based on all of your
+                        preferences.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END portfolio item -->
+
+              <!-- START Portfolio item - Abington Lane  -->
+              <div class="span6 project-item graphics box">
+                <div class="thumbnail">
+                  <div class="project-item-image-container">
+                    <div class="project-item-overlay">
+                      <div class="inner">
+                        <ul>
+                          <li class="lang-overlay">
+                            <div class="html css javascript"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img
+                      class="project-2"
+                      src="./assets/img/abington-lane.jpg"
+                      alt="abingtonlane.com"
+                      title="abingtonlane.com"
+                    />
+                  </div>
+
+                  <!-- CAPTION -->
+                  <div class="caption">
+                    <div class="transit-to-top">
+                      <h3 class="p-title standard-h3title">Abington Lane</h3>
+                      <p class="caption-descr">
+                        A custom E-commerce website custom built on Shopify. Provides
+                        elegant shopping experience for customers on custom theme
+                        build. Custom functionality and styling using JavaScript and
+                        CSS.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END portfolio item -->
+
+              <!-- START portfolio item - JENNA HUNTER -->
+              <div class="span6 project-item graphics box">
+                <div class="thumbnail">
+                  <div class="project-item-image-container">
+                    <div class="project-item-overlay">
+                      <div class="inner">
+                        <ul>
+                          <li class="lang-overlay">
+                            <div class="html css javascript"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img
+                      class="project-2"
+                      src="./assets/img/jennahunter.jpg"
+                      alt="LJM Beads"
+                      title="LJM Beads"
+                    />
+                  </div>
+                  <div class="caption">
+                    <div class="transit-to-top">
+                      <h3 class="p-title standard-h3title">Jenna Hunter</h3>
+                      <p class="caption-descr">
+                        An E-commerce website custom built for a client on Shopify.
+                        Provides simple and elegant shopping experience for
+                        customers. Custom functionality and styling using JavaScript
+                        and CSS.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END portfolio item -->
+
+              <!-- START Portfolio item - Friend of Thai Daughters  -->
+              <div class="span6 project-item graphics box hidden">
+                <div class="thumbnail">
+                  <div class="project-item-image-container">
+                    <div class="project-item-overlay">
+                      <div class="inner">
+                        <ul>
+                          <li class="lang-overlay">
+                            <div class="html css"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img
+                      class="project-2"
+                      src="./assets/img/ftd-min.jpg"
+                      alt="Friendsofthaidaughters.org"
+                      title="Friendsofthaidaughters.org"
+                    />
+                  </div>
+
+                  <!-- CAPTION -->
+                  <div class="caption">
+                    <div class="transit-to-top">
+                      <h3 class="p-title standard-h3title">
+                        Friends of Thai Daughters
+                      </h3>
+                      <p class="caption-descr">
+                        A website for a non-profit organization that fights to
+                        prevent sex trafficking in the Golden Triangle. Originally
+                        developed with custom JS, HTML and CSS, it has been
+                        redesigned on Wix to allow quick editing by others in the
+                        organization.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END portfolio item -->
+
+              <!-- START portfolio item - LJM Beads -->
+              <div class="span6 project-item graphics box hidden">
+                <div class="thumbnail">
+                  <div class="project-item-image-container">
+                    <div class="project-item-overlay">
+                      <div class="inner">
+                        <ul>
+                          <li class="lang-overlay">
+                            <div class="html css javascript"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img
+                      class="project-2"
+                      src="./assets/img/ljm_beads-min.jpg"
+                      alt="LJM Beads"
+                      title="LJM Beads"
+                    />
+                  </div>
+                  <div class="caption">
+                    <div class="transit-to-top">
+                      <h3 class="p-title standard-h3title">LJM Beads</h3>
+                      <p class="caption-descr">
+                        A small E-commerce website built using Big Cartel for stock
+                        management and payment processing. This site is still in
+                        development for the owner while more inventory is being
+                        created.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END portfolio item -->
+
+              <!-- START portfolio item - Stranger Tic Tac Toe-->
+              <div class="span6 project-item graphics box hidden">
+                <div class="thumbnail">
+                  <div class="project-item-image-container">
+                    <div class="project-item-overlay">
+                      <div class="inner">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://github.com/wmcb91/tic-tac-toe"
+                              class="proj-btn"
+                              title="Github"
+                            >
+                              <span class="fa fa-github fa-3x"></span>
+                            </a>
+                            <a
+                              class="proj-btn"
+                              href="https://wmcb91.github.io/tic-tac-toe"
+                              title="Direct Link"
+                            >
+                              <span class="fa fa-link fa-3x"></span>
+                            </a>
+                          </li>
+                          <li class="lang-overlay">
+                            <div class="html css javascript jquery"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img
+                      class="project-2"
+                      src="./assets/img/stranger-ttt-min.jpg"
+                      alt="Stranger Tic Tac Toe"
+                    />
+                  </div>
+                  <!-- CAPTION -->
+
+                  <div class="caption">
+                    <div class="transit-to-top">
+                      <h3 class="p-title standard-h3title">Stranger Tic Tac Toe</h3>
+                      <p class="caption-descr">
+                        This simple tic tac toe app is the first I ever built. It's
+                        logic is written in JavaScript and is styled and animated
+                        with jQuery and custom Sass.
+                        <a
+                          id="nel"
+                          href="https://nelsoncash.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Nelson Cash</a
+                        >
+                        designed the title font and background.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END portfolio item -->
+
+              <!-- START portfolio item - Golf Handicap Calculator -->
+              <div class="span6 project-item graphics box hidden">
+                <div class="thumbnail">
+                  <div class="project-item-image-container">
+                    <div class="project-item-overlay">
+                      <div class="inner">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://github.com/wmcb91/GHCP"
+                              class="proj-btn"
+                              title="Github"
+                            >
+                              <span class="fa fa-github fa-3x"></span>
+                            </a>
+                          </li>
+                          <li class="lang-overlay">
+                            <div class="html css javascript jquery rails"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img
+                      class="project-2"
+                      src="./assets/img/ghcp-opt.png"
+                      alt="GHCP"
+                      title="GHCP"
+                    />
+                  </div>
+                  <div class="caption">
+                    <div class="transit-to-top">
+                      <h3 class="p-title standard-h3title">
+                        Golf Handicap Calculator +
+                      </h3>
+                      <p class="caption-descr">
+                        This app keeps a history of a user's rounds of golf &amp;
+                        automatically calculates and updates their handicap index as
+                        they add new rounds. It uses JavaScript, jQuery, Sass on the
+                        front end and the API is built with Ruby on Rails.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END portfolio item -->
             </div>
+            <div id="show-more-btn" class="show-more-btn">Show More</div>
           </div>
-        <!-- END portfolio item -->
+        </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section id="contact-section">
+        <div class="row-fluid">
+          <hr class="half" />
+          <h2 class="center standard-h2title">
+            <span class="large-text">
+              <span class="first-word">Keep</span> in contact</span
+            >
+          </h2>
+          <hr class="half" />
+        </div>
+        <h4 class="contact-text">
+          <span class="main-color" style="user-select: none">Email: <br /></span>
+          wmcbridedev@gmail.com
+        </h4>
+        <div class="contact-icons-div span5">
+          <div class="contact-icon">
+            <a
+              class="linked"
+              title="LinkedIn"
+              alt="LinkedIn"
+              href="https://www.linkedin.com/in/will-mcbride-57b54054"
+            >
+              <span class="fa fa-linkedin fa-4x main-color"></span>
+            </a>
+            <span class="icon-description">LinkedIn</span>
+          </div>
+          <div class="contact-icon">
+            <a
+              class="github"
+              title="Github"
+              alt="Github"
+              href="https://github.com/wmcb91"
+            >
+              <span class="fa fa-github fa-4x main-color"></span>
+            </a>
+            <span class="icon-description">Github</span>
+          </div>
+        </div>
+        <br />
+        <div class="contact-icons-div span5">
+          <div class="contact-icon">
+            <a class="resume" title="Resume" href="./mcbride_resume.pdf">
+              <span class="fa fa-file-text-o fa-3x resume-link main-color"></span>
+            </a>
+            <span class="icon-description">Resume</span>
+          </div>
+          <div class="contact-icon code-sample-btn">
+            <a title="Code Samples" alt="Code Samples" href="./fizzbuzz_1">
+              <span class="fa fa-code fa-4x code-link main-color"></span>
+            </a>
+            <span class="icon-description">Code Samples</span>
+          </div>
+          <br />
+          <br />
+          <br />
+        </div>
+      </section>
+      <!--/ CONTACT SECTION -->
+    </div>
 
-        <!-- START Portfolio item - Friend of Thai Daughters  -->
-        <div class="span6 project-item graphics box hidden">
-          <div class="thumbnail">
-            <div class="project-item-image-container">
-              <div class="project-item-overlay">
-                <div class="inner">
-                  <ul>
-                    <li class="lang-overlay">
-                      <div class="html css"></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <img class="project-2"
-                   src="./assets/img/ftd-min.jpg"
-                   alt="Friendsofthaidaughters.org" title="Friendsofthaidaughters.org">
-            </div>
-
-            <!-- CAPTION -->
-            <div class="caption">
-              <div class="transit-to-top">
-                <h3 class="p-title standard-h3title">Friends of Thai Daughters</h3>
-                <p class="caption-descr">
-                  A website for a non-profit organization that fights to prevent
-                  sex trafficking in the Golden Triangle. Originally developed
-                  with custom JS, HTML and CSS, it has been redesigned on
-                  Wix to allow quick editing by others in the organization.
-                </p>
-              </div>
+    <section id="footer-section">
+      <footer class="footer">
+        <div class="container">
+          <hr class="half1 copyhr" />
+          <div class="row-fluid copyright">
+            <div class="span12 center">
+              &copy; <span id="year">2019</span> Will McBride
             </div>
           </div>
         </div>
-        <!-- END portfolio item -->
+      </footer>
+    </section>
 
-        <!-- START portfolio item - LJM Beads -->
-        <div class="span6 project-item graphics box hidden">
-          <div class="thumbnail">
-            <div class="project-item-image-container">
-              <div class="project-item-overlay">
-                <div class="inner">
-                  <ul>
-                    <li class="lang-overlay">
-                      <div class="html css javascript"></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            <img class="project-2"
-                 src="./assets/img/ljm_beads-min.jpg"
-                 alt="LJM Beads" title="LJM Beads">
-            </div>
-            <div class="caption">
-              <div class="transit-to-top">
-                <h3 class="p-title standard-h3title">LJM Beads</h3>
-                <p class="caption-descr">
-                  A small E-commerce website built using Big Cartel for stock
-                  management and payment processing. This site is still in
-                  development for the owner while more inventory is being created.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END portfolio item -->
-
-        <!-- START portfolio item - Stranger Tic Tac Toe-->
-        <div class="span6 project-item graphics box hidden">
-          <div class="thumbnail">
-            <div class="project-item-image-container">
-              <div class="project-item-overlay">
-                <div class="inner">
-                  <ul>
-                    <li>
-                      <a href="https://github.com/wmcb91/tic-tac-toe"
-                         class="proj-btn"
-                         title="Github">
-                        <span class="fa fa-github fa-3x"></span>
-                      </a>
-                      <a class="proj-btn"
-                         href="https://wmcb91.github.io/tic-tac-toe"
-                         title="Direct Link">
-                        <span class="fa fa-link fa-3x "></span>
-                      </a>
-                    </li>
-                    <li class="lang-overlay">
-                      <div class="html css javascript jquery"></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <img class="project-2"
-                   src="./assets/img/stranger-ttt-min.jpg"
-                   alt="Stranger Tic Tac Toe">
-            </div>
-            <!-- CAPTION -->
-
-            <div class="caption">
-              <div class="transit-to-top">
-                <h3 class="p-title standard-h3title">Stranger Tic Tac Toe</h3>
-                <p class="caption-descr">
-                  This simple tic tac toe app is the first I ever built. It's logic
-                  is written in JavaScript and is styled and animated with jQuery and custom
-                  Sass. <a id="nel" href="https://nelsoncash.com/" target="_blank" rel="noopener noreferrer">Nelson Cash</a>
-                  designed the title font and background.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END portfolio item -->
-
-        <!-- START portfolio item - Golf Handicap Calculator -->
-        <div class="span6 project-item graphics box hidden">
-          <div class="thumbnail">
-            <div class="project-item-image-container">
-              <div class="project-item-overlay">
-                <div class="inner">
-                  <ul>
-                    <li>
-                      <a href="https://github.com/wmcb91/GHCP"
-                         class="proj-btn"
-                         title="Github">
-                        <span class="fa fa-github fa-3x"></span>
-                      </a>
-                    </li>
-                    <li class="lang-overlay">
-                      <div class="html css javascript jquery rails"></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <img class="project-2"
-                   src="./assets/img/ghcp-opt.png"
-                   alt="GHCP" title="GHCP">
-            </div>
-            <div class="caption">
-              <div class="transit-to-top">
-                <h3 class="p-title standard-h3title">
-                  Golf Handicap Calculator +
-                </h3>
-                <p class="caption-descr">
-                  This app keeps a history of a user's rounds of golf &amp;
-                  automatically calculates and updates their handicap index as
-                  they add new rounds. It uses JavaScript, jQuery, Sass on the
-                  front end and the API is built with Ruby on Rails.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END portfolio item -->
-      </div>
-      <div id="show-more-btn" class="show-more-btn">
-        Show More
-      </div>
-    </div>
-  </div>
-</section>
-<!-- CONTACT SECTION -->
-<section id="contact-section">
-  <div class="row-fluid">
-    <hr class="half">
-      <h2 class="center standard-h2title"> <span class="large-text">
-        <span class="first-word">Keep</span> in contact</span>
-      </h2>
-    <hr class="half">
-  </div>
-  <h4 class="contact-text">
-    <span class="main-color" style='user-select:none'>Email: <br></span>
-    wmcbridedev@gmail.com
-  </h4>
-  <div class="contact-icons-div span5">
-    <div class="contact-icon">
-      <a class="linked"
-         title="LinkedIn"
-         alt="LinkedIn"
-         href="https://www.linkedin.com/in/will-mcbride-57b54054">
-         <span class="fa fa-linkedin fa-4x main-color"></span>
-      </a>
-    <span class="icon-description">LinkedIn</span>
-    </div>
-    <div class="contact-icon">
-      <a class="github"
-         title="Github"
-         alt="Github"
-         href="https://github.com/wmcb91">
-         <span class="fa fa-github fa-4x main-color"></span>
-      </a>
-      <span class="icon-description">Github</span>
-    </div>
-  </div>
-  <br>
-  <div class="contact-icons-div span5">
-    <div class="contact-icon">
-      <a class="resume"
-         title="Resume"
-         href="./mcbride_resume.pdf">
-        <span class="fa fa-file-text-o fa-3x resume-link main-color"></span>
-      </a>
-      <span class="icon-description">Resume</span>
-    </div>
-    <div class="contact-icon code-sample-btn">
-      <a title="Code Samples"
-         alt="Code Samples"
-         href="./fizzbuzz_1">
-         <span class="fa fa-code fa-4x code-link main-color"></span>
-      </a>
-      <span class="icon-description">Code Samples</span>
-    </div>
-    <br>
-    <br>
-    <br>
-  </div>
-</section>
-<!--/ CONTACT SECTION -->
-</div>
-
-<section id="footer-section">
-  <footer class="footer">
-    <div class="container">
-      <hr class="half1 copyhr">
-      <div class="row-fluid copyright">
-        <div class="span12 center">&copy; <span id="year">2019</span> Will McBride</div>
-      </div>
-    </div>
-  </footer>
-</section>
-
-
-<!--  ================================================== -->
-<script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="./assets/js/nav-hide.js"></script>
-<script type="text/javascript" src="./assets/js/preloader.js"></script>
-<script type="text/javascript" src="./assets/js/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="./assets/js/ios-orientation-change-fix.js"></script>
-</body>
+    <!--  ================================================== -->
+    <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/nav-hide.js"></script>
+    <script type="text/javascript" src="./assets/js/preloader.js"></script>
+    <script
+      type="text/javascript"
+      src="./assets/js/jquery.localscroll-1.2.7-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./assets/js/ios-orientation-change-fix.js"
+    ></script>
+  </body>
 </html>
