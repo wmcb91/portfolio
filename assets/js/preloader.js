@@ -42,28 +42,23 @@ $(document).ready(function () {
   })
 
   function addLangIcons() {
-    var path = 'assets/img/devicon-master/icons/'
-    var iconRefs = {
-      nextjs: 'nextjs/nextjs-original-wordmark.svg',
-      react: 'react/react-original-wordmark.svg',
-      gatsby: 'gatsby/gatsby-original.svg',
-      html: 'html5/html5-plain-wordmark.svg',
-      css: 'css3/css3-plain-wordmark.svg',
-      javascript: 'javascript/javascript-original.svg',
-      jquery: 'jquery/jquery-plain-wordmark.svg',
-      python: 'python/python-alt-wordmark.svg',
-      django: 'django/django-icon.png',
-      vue: 'vue/vue-plain-wordmark.svg',
-      rails: 'rails/rails-plain-wordmark.svg',
-    }
+    var baseUrl =
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{lang}/{lang}-original.svg'
 
-    for (lang in iconRefs) {
-      $('.lang-overlay')
-        .find(`.${lang}`)
-        .append(
-          `<img class="mini-icon" src="${path}${iconRefs[lang]}" title="${lang}" alt="${lang}">`
-        )
-    }
+    var plainOnlyLangs = ['django', 'rails']
+
+    $('.lang-overlay').each(function () {
+      var langs = $(this).data('lang').split(' ')
+      langs.forEach(lang => {
+        var srcUrl = baseUrl.replace(/{lang}/g, lang)
+
+        if (plainOnlyLangs.includes(lang)) {
+          srcUrl = srcUrl.replace('-original', '-plain')
+        }
+
+        $(this).append(`<img class="mini-icon" src="${srcUrl}" alt="${lang}">`)
+      })
+    })
 
     let date = new Date()
     $('#year').text(date.getFullYear())
